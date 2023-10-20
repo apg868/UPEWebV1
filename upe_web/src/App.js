@@ -6,6 +6,7 @@ import NavBar from './components/NavBar/Nav'
 
 function App() {
   return (
+    // Test comment
     <ChakraProvider theme={themeProv}>
       <NavBar/>
     </ChakraProvider>

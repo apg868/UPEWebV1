@@ -1,8 +1,18 @@
 import { extendTheme } from '@chakra-ui/react';
+import { createBreakpoints } from '@chakra-ui/theme-tools';
+
+const breakpoints = createBreakpoints({
+  base: '0em', //0px
+  sm: '30em',
+  md: '48em',  // 768px
+  lg: '70em',  // 992px
+  xl: '80em',  // 1280px
+});
 
 const themeProv = extendTheme({
+  breakpoints,
   fonts: {
-    mainFont: "'Roboto', sans-serif",
+    primaryFont: "'Roboto', sans-serif",
     secondaryFont: "'Jost', sans-serif",
   },
   fontWeights: {

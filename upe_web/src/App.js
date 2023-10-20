@@ -1,14 +1,15 @@
-import './App.css';
-import { ChakraProvider, theme } from '@chakra-ui/react';
-import themeProv from './theme'
-import NavBar from './components/NavBar/Nav'
-
+import React from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
+import { BrowserRouter } from 'react-router-dom'; // <-- Import this
+import themeProv from './theme';
+import NavBar from './components/NavBar/Nav';
 
 function App() {
   return (
-    // Test comment
     <ChakraProvider theme={themeProv}>
-      <NavBar/>
+      <BrowserRouter> {/* <-- Add this */}
+        <NavBar/>
+      </BrowserRouter> {/* <-- Add this */}
     </ChakraProvider>
   );
 }

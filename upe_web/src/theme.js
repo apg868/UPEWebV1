@@ -2,8 +2,8 @@ import { extendTheme } from '@chakra-ui/react';
 
 const themeProv = extendTheme({
   fonts: {
-    main: "'Roboto', sans-serif",
-    secondary: "'Jost', sans-serif",
+    mainFont: "'Roboto', sans-serif",
+    secondaryFont: "'Jost', sans-serif",
   },
   fontWeights: {
     thin: 100,
@@ -14,7 +14,7 @@ const themeProv = extendTheme({
   },
   colors: {
     primaryRed: "rgb(255, 68, 68)",
-    secondaryRed: "rgb(37, 150, 190)",
+    secondaryRed: "rgb(136, 7, 8)",
     primaryGray: "rgb(218, 218, 218)",
     secondaryGray: "rgb(219,219,219)"
   }

@@ -6,8 +6,7 @@ function BannerTransition(){
         borderRadius="2em"justifyContent="center" alignItems="center">
             <Text fontSize={{"base":"lg","md":"2xl","lg":"4xl"}}
             fontFamily="specialFont1" color="white" fontWeight="normal">
-            What UPE has to offer </Text>
-
+            What UPE has to offer make your changes</Text>
         </Flex>
     )
 }

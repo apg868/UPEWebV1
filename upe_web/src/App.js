@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'; // <-- Import t
 import themeProv from './theme';
 import NavBar from './components/NavBar/Nav';
 import MainPage from './components/MainPage/MainPage';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Routes>
             <Route exact path="/" element={<MainPage />} />
           </Routes>
+
+          <Footer />
         </>
       </BrowserRouter> {/* <-- Add this */}
     </ChakraProvider>

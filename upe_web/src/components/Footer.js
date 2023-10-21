@@ -1,7 +1,7 @@
 import React from "react";
 import { VStack, HStack, Image, Text, Link as ChakraLink, Icon } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import logoWHITE from "./../../../assets_folder/logoWHITE.png"
+import logoWHITE from "./../assets_folder/logoWHITE.png"
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 

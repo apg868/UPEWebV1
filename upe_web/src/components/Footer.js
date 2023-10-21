@@ -8,7 +8,7 @@ function Footer() {
     return (
         <Stack
             direction={["column", "column", "row"]} // Adjust the layout based on screen size
-            spacing={[4, 4, "10rem"]}
+            spacing={[4, 4, "8rem"]}
             marginTop="3rem"
             height="auto" // Adjust height for mobile responsiveness
             width="100%"
@@ -37,7 +37,7 @@ function Footer() {
                     <Link to="/about-us">About Us</Link>
                 </Text>
             </VStack>
-            <VStack align="center">
+            <VStack spacing={2} align={["center", "center", "flex-start"]}>
                 <Text color="gray" fontFamily="secondaryFont" fontWeight="bold" fontSize="md">
                     Connect with us on social media!
                 </Text>

@@ -7,15 +7,15 @@ function CardFrame(props) {
     const image = props.image
 
     return (
-        <Box bg="primaryGray" width={{ "md": "21em", "lg": "26em" }} height={{ "md": "30em", "lg": "35em" }} borderRadius="0.5em"
+        <Box bg="primaryGray" width={{ "base":" 21em", "md": "13em", "lg": "21em" }} height={{ "base":"26.5em", "md": "20em", "lg": "26.5em" }} borderRadius="0.5em"
         >
-            <VStack justifyContent="center" paddingTop={{ "md": ".75em", "lg": "1em" }}>
-                <Image src={image} width={{ "md": "19em", "lg": "24em" }} height={{ "md": "10em", "lg": "20em" }} borderRadius="0.5em" />
+            <VStack justifyContent="center" paddingTop={{ "base":"1em",  "md": ".75em", "lg": "1em" }}>
+                <Image src={image} width={{ "base":"20em", "md": "12em", "lg": "20em" }} height={{"base":"16em", "md": "9.5em", "lg": "16em" }} borderRadius="0.5em" />
                 <Box
-                    paddingLeft={{ "md": ".75em", "lg": "2em" }}
-                    paddingRight={{ "md": ".75em", "lg": "2em" }}>
-                    <Text fontFamily="secondaryFont" fontWeight="medium" maxWidth="100%" fontSize={{ "base": "lg", "md": "xl", "lg": "2xl" }}>  {props.title} </Text>
-                    <Text fontFamily="primaryFont" fontWeight="normal" maxWidth="100%" fontSize={{ "base": "md", "md": "lg", "lg": "xl" }}>  {props.description} </Text>
+                    paddingLeft={{ "base":"2em", "md": ".75em", "lg": "2em" }}
+                    paddingRight={{ "base":"2em", "md": ".75em", "lg": "2em" }}>
+                    <Text fontFamily="secondaryFont" fontWeight="medium" maxWidth="100%" fontSize={{ "base": "xl", "md": "md", "lg": "xl" }}>  {props.title} </Text>
+                    <Text fontFamily="primaryFont" fontWeight="normal" maxWidth="100%" fontSize={{ "base": "lg", "md": "sm", "lg": "lg" }}>  {props.description} </Text>
                 </Box>
             </VStack>
         </Box>

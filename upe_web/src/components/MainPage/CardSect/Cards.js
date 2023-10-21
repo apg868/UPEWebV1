@@ -9,8 +9,8 @@ function Cards() {
 
   return (
     <>
-      {breakpoint === "lg" && <CardDesk />}
-      {breakpoint !== "lg" && <CardMobile />}
+      {breakpoint === "base" && <CardMobile />}
+      {breakpoint !== "base" && <CardDesk />}
     </>
   );
 }

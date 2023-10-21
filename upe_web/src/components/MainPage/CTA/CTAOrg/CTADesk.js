@@ -10,17 +10,34 @@ function CTADesk(){
                 <Text color="white" fontSize={{"md":"2xl","lg":"5xl"}}
                 fontFamily="secondaryFont"> Want to Join? </Text>
                 <HStack spacing="10vw">
-                <Button bg="white"
-                    fontFamily="secondaryFont" fontWeight="normal" color="primaryRed" w="15vw"
-                    fontSize={{"base":"lg","md":"xl","lg":"2xl"}}> Application
-                </Button>
-                <Button bg="white"
-                    fontFamily="secondaryFont" fontWeight="normal" color="primaryRed"
-                    fontSize={{"base":"lg","md":"xl","lg":"2xl"}}> Interview Signup
-                </Button>
+                <Button
+    bg="white"
+    size="lg"
+    borderRadius="2em"
+    fontFamily="secondaryFont"
+    fontWeight="normal"
+    color="primaryRed"
+    w={{"md":"35vw", "lg":"25vw"}}
+    fontSize={{"md":"2xl","lg":"3xl"}}
+>
+    Application
+</Button>
+<Button
+    bg="white"
+    size="lg"
+    borderRadius="2em"
+    fontFamily="secondaryFont"
+    fontWeight="normal"
+    color="primaryRed"
+    w={{"md":"35vw", "lg":"25vw"}}
+    fontSize={{"md":"2xl","lg":"3xl"}}
+>
+    Interview Sign-up
+</Button>
+
                 </HStack>
-                <Flex w="90vw" bg="white" height="5vh" justifyContent="center"
-                fontFamily="primaryFont"> Our applications open every fall and spring semester</Flex>
+                <Flex w="90vw" bg="white" height="6vh" justifyContent="center" borderRadius="0.5em"
+                fontFamily="primaryFont" fontSize={{"md":"md","lg":"3xl"}}> Our applications open every fall and spring semester</Flex>
             </VStack>
         </Flex>
         </>

@@ -14,6 +14,7 @@ const themeProv = extendTheme({
   fonts: {
     primaryFont: "'Roboto', sans-serif",
     secondaryFont: "'Jost', sans-serif",
+    bannerFont: "'Roboto Mono', sans-serif"
   },
   fontWeights: {
     thin: 100,

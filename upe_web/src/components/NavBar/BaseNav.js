@@ -9,26 +9,26 @@ function BaseNav() {
         <Image src={logoRED} boxSize="9vh" borderRadius="4em"/>
         <HStack spacing={{"md": "6em", "lg": "7em"}} paddingLeft={{"md": "3em", "lg": "4em"}}>
           <Link to="/">
-            <Text fontFamily="primaryFont" fontWeight="thin" fontSize={{"md": "xl","lg":"2xl"}} pt={1} 
-                  _hover={{ color: "primaryRed"}}>
+            <Text fontFamily="primaryFont" fontWeight="thin" fontSize={{"md": "xl","lg":"2xl"}} pt={1}
+                  _hover={{ color: "secondaryRed"}}>
               Home
             </Text>
           </Link>
           <Link to="/members">
-            <Text fontFamily="primaryFont" fontWeight="thin" fontSize={{"md": "xl","lg":"2xl"}} pt={1} 
-                  _hover={{ color: "primaryRed"}}>
+            <Text fontFamily="primaryFont" fontWeight="thin" fontSize={{"md": "xl","lg":"2xl"}} pt={1}
+                  _hover={{ color: "secondaryRed"}}>
               Members
             </Text>
           </Link>
           <Link to="/intern-projects">
-            <Text fontFamily="primaryFont" fontWeight="thin" fontSize={{"md": "xl","lg":"2xl"}} pt={1} 
-                  _hover={{ color: "primaryRed"}}>
+            <Text fontFamily="primaryFont" fontWeight="thin" fontSize={{"md": "xl","lg":"2xl"}} pt={1}
+                  _hover={{ color: "secondaryRed"}}>
               Intern Projects
             </Text>
           </Link>
           <Link to="/about-us">
-            <Text fontFamily="primaryFont" fontWeight="thin" fontSize={{"md": "xl","lg":"2xl"}} pt={1} 
-                  _hover={{ color: "primaryRed"}}>
+            <Text fontFamily="primaryFont" fontWeight="thin" fontSize={{"md": "xl","lg":"2xl"}} pt={1}
+                  _hover={{ color: "secondaryRed"}}>
               About Us
             </Text>
           </Link>

@@ -8,7 +8,7 @@ function Banner(){
         <Flex
             bgImage={bannerMain}
             w="100vw"
-            h={{"base":"70vh", "md":"60vh"}}
+            h={{"base":"70vh", "md":"70vh"}}
             alignItems="flex-start"
             justifyContent="flex-start"
             padding="2em"
@@ -19,7 +19,7 @@ function Banner(){
             <Box
                 background="rgb(218,218,218,1)"
                 borderRadius="1em"
-                p={{"base":"0.5em", "md":"1em", "lg":"0.5em"}}
+                p={{"base":"0.5em", "md":"0.5em", "lg":"0.5em"}}
             >
                 <VStack spacing="0em">
                     <HStack spacing = "0em">
@@ -49,9 +49,9 @@ function Banner(){
                     <Text
                     fontFamily={"bannerFont"}
                     fontWeight="light"
-                    fontSize={{"base":"xs", "md": "sm","lg":"md"}}>  Boston University Chapter
+                    fontSize={{"base":"2xs", "md": "xs","lg":"md"}}>  Boston University Chapter
                     </Text>
-                    <HStack spacing={{"base":"4em","md":"6em","lg":"7em"}}>
+                    <HStack spacing={{"base":"4em","md":"5em","lg":"7em"}}>
                         <Text fontFamily={"bannerFont"} fontWeight="bold" fontSize={{"base":"md", "md": "lg","lg":"2xl"}}>Υ</Text>
                         <Text fontFamily={"bannerFont"} fontWeight="bold" fontSize={{"base":"md", "md": "lg","lg":"2xl"}}>Π</Text>
                         <Text fontFamily={"bannerFont"} fontWeight="bold" fontSize={{"base":"md", "md": "lg","lg":"2xl"}}>Ε</Text>

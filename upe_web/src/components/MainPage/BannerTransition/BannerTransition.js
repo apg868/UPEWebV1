@@ -6,7 +6,7 @@ function BannerTransition(){
         borderRadius="2em"justifyContent="center" alignItems="center">
             <Text fontSize={{"base":"lg","md":"2xl","lg":"4xl"}}
             fontFamily="bannerFont" color="white" fontWeight="normal">
-            What UPE Can Offer You</Text>
+            What UPE Has to Offer</Text>
         </Flex>
     )
 }

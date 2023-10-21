@@ -3,6 +3,7 @@ import Banner from "./BannerTop/Banner"
 import Banner2 from "./BannerTop/Banner2"
 import BannerTransition from "./BannerTransition/BannerTransition";
 import Cards from "./CardSect/Cards";
+import Footer from "./Footer/Footer.js";
 
 function MainPage(){
     return(
@@ -10,6 +11,7 @@ function MainPage(){
         <Banner/>
         <BannerTransition/>
         <Cards/>
+        <Footer />
         </>
     )
 }

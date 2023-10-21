@@ -7,8 +7,8 @@ function NavBar() {
 
   return (
     <>
-      {breakpoint === "base" && <HamNav/>}
-      {breakpoint !== "base" && <BaseNav/>}
+      {breakpoint === "base" && <HamNav />}
+      {breakpoint !== "base" && <BaseNav />}
     </>
   );
 }

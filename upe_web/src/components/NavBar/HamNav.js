@@ -20,7 +20,7 @@ function HamNav() {
       <Image src={logoRED} boxSize="5em" borderRadius="4em" />
 
       <Menu position="0">
-      {({ isOpen }) => (
+        {({ isOpen }) => (
           <>
             <MenuButton
               as={IconButton}
@@ -31,22 +31,22 @@ function HamNav() {
             />
             <MenuList>
               <MenuItem as={Link} to="/">
-                <Text fontFamily="primaryFont" fontWeight="thin">
+                <Text fontFamily="secondaryFont" fontWeight="light">
                   Home
                 </Text>
               </MenuItem>
               <MenuItem as={Link} to="/members">
-                <Text fontFamily="primaryFont" fontWeight="thin">
+                <Text fontFamily="secondaryFont" fontWeight="light">
                   Members
                 </Text>
               </MenuItem>
               <MenuItem as={Link} to="/intern-projects">
-                <Text fontFamily="primaryFont" fontWeight="thin">
+                <Text fontFamily="secondaryFont" fontWeight="light">
                   Intern Projects
                 </Text>
               </MenuItem>
               <MenuItem as={Link} to="/about-us">
-                <Text fontFamily="primaryFont" fontWeight="thin">
+                <Text fontFamily="secondaryFont" fontWeight="light">
                   About Us
                 </Text>
               </MenuItem>

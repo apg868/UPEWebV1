@@ -1,5 +1,3 @@
-//parent file to conditionally load either DeskCards for regular display, or MobileCards for mobile
-
 import { useBreakpointValue } from "@chakra-ui/react";
 import CardDesk from "./CardOrg/CardDesk";
 import CardMobile from "./CardOrg/CardMobile";

@@ -5,6 +5,7 @@ import themeProv from './theme';
 import NavBar from './components/NavBar/Nav';
 import MainPage from './components/MainPage/MainPage';
 import Footer from './components/Footer.js';
+import MembersPage from './components/MembersPage/MembersPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 
           <Routes>
             <Route exact path="/" element={<MainPage />} />
+            <Route exact path="/members" element={<MembersPage/>} />
           </Routes>
 
           <Footer />

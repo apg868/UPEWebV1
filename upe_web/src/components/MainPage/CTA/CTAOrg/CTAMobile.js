@@ -45,7 +45,7 @@ function CTAMobile(){
                         </Button>
                     </a>
                     </VStack>
-                <Flex w="22em" bg="white" height="2em" justifyContent="center" borderRadius="0.1em" Align="center"
+                <Flex w="22em" bg="white" height="2em" justifyContent="center" borderRadius="0.5em" Align="center"
                 fontFamily="secondaryFont" fontSize="sm" marginTop={{"md":"1em", "lg":"2em"}}
                 fontWeight="light"> Our applications open every fall and spring semester</Flex>
             </VStack>

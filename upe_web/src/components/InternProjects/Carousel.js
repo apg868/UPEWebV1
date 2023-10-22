@@ -18,7 +18,7 @@ function CaptionCarousel({ slides }) {
     const currentDescription = slides[currentSlide]?.description || "";
 
     return (
-        <Box position="relative" w="100%" h="100vh">
+        <Box position="relative" w="100%" h="80vh">
             <Box
                 w="100%"
                 h="100%"
@@ -32,14 +32,14 @@ function CaptionCarousel({ slides }) {
                     position="absolute"
                     bottom="10%"
                     left="5%"
-                    bg="rgba(0,0,0,0.8)"
+                    bg="rgba(0,0,0,0.7)"
                     p={{"base":"0.5","md":"1","lg":"2"}}
                     w={{"base":"10em", "md":"15em","lg":"20em"}}
                     borderRadius="md"
                     alignItems="left"
                 >
-                    <Text fontSize={{"base":"lg","md":"xl","lg":"2xl"}} fontFamily="primaryFont" fontWeight="bold" color="white">{currentName}</Text>
-                    <Text fontSize={{"base":"md","md":"lg","lg":"xl"}} fontFamily="primaryFont" color="white">{currentDescription}</Text>
+                    <Text fontSize={{"base":"lg","md":"xl","lg":"2xl"}} fontFamily="primaryFont" fontWeight="medium" color="white">{currentName}</Text>
+                    <Text fontSize={{"base":"md","md":"lg","lg":"xl"}} fontFamily="bannerFont" color="white">{currentDescription}</Text>
                 </VStack>
 
                 <Button

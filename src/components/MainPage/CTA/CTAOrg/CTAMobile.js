@@ -11,7 +11,7 @@ function CTAMobile(){
         left="0"
         justifyContent="center"
         alignItems="center">
-        <Flex bg="primaryRed" width="20em" height="25em" marginTop="5em"
+        <Flex bg="primaryRed" width="auto" height="25em" marginTop="5em"
          justifyContent="center" borderRadius="2em" p="1.5em" align="center" alignSelf="center">
             <VStack spacing="5em">
                 <Text color="white" fontSize="2xl"

@@ -3,8 +3,8 @@ import { HStack, VStack, Flex, Box, useBreakpointValue, Text } from "@chakra-ui/
 function IntroBanner(){
     return(
         <Flex>
-            <Text fontFamily="primaryFont" fontWeight="light" fontSize={{"sm":"3xl","md":"4xl","lg":"5xl"}}>
-            Meet some of our current members </Text>
+            <Text fontFamily="secondaryFont" fontWeight="light" fontSize={{"sm":"3xl","md":"4xl","lg":"5xl"}}>
+            Meet Our Current Members </Text>
         </Flex>
     )
 }

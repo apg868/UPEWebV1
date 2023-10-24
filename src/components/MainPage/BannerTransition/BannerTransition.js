@@ -1,6 +1,6 @@
 import { useBreakpointValue, Flex, Text, Box, Image, HStack, VStack } from "@chakra-ui/react";
 
-function BannerTransition() {
+function BannerTransition(props) {
     return (
         <Flex
             position="relative"
@@ -14,7 +14,7 @@ function BannerTransition() {
         >
             <Flex
                 bg="primaryRed"
-                w={{"base":"45em","md":"60em","lg":"90em"}}
+                w={{"base":"30em","md":"60em","lg":"90em"}}
                 borderRadius="2em"
                 justifyContent="center"
                 alignItems="center"
@@ -25,7 +25,7 @@ function BannerTransition() {
                     color="white"
                     fontWeight="normal"
                 >
-                    What UPE Has to Offer
+                    {props.text}
                 </Text>
             </Flex>
         </Flex>

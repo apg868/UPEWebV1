@@ -1,6 +1,5 @@
 import { useBreakpointValue, Flex, Text, Box, Image, HStack, VStack } from "@chakra-ui/react";
 
-
 function CardFrame(props) {
     const title = props.title
     const description = props.description

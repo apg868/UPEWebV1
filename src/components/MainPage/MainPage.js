@@ -10,7 +10,7 @@ function MainPage(){
         <>
         <Banner bannerImage={bannerImage} logo={true} />
         <BannerTransition text="UPE: Your Gateway to CS Excellence" />
-        <Cards/>
+        <Cards cardH="30em"/>
         <CTA/>
         </>
     )

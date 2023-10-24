@@ -1,6 +1,9 @@
 import { useBreakpointValue, Flex, Text, Box, Image, HStack, VStack } from "@chakra-ui/react";
 
 function Banner(props) {
+    // Add this CSS style to prevent horizontal scrolling
+    document.body.style.overflowX = "hidden";
+
     return (
         <Flex
             bgImage={props.bannerImage}

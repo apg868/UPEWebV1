@@ -4,7 +4,7 @@ import logoRED from './../../assets_folder/logoRED.png';
 
 function BaseNav() {
   return (
-    <Flex position="sticky" top={0} left={0} right={0} bg={{ "md": "primaryGray" }} w='100%' h="9vh" zIndex={1}>
+    <Flex position="sticky" top={0} left={0} right={0} bg={{ "md": "primaryGray" }} w='100%' h="9vh" zIndex={1} borderBottom="2px" borderBottomColor="primaryRed">
       <HStack spacing={{ "md": "3em", "lg": "15em" }}>
         <Image src={logoRED} boxSize="9vh" borderRadius="4em" />
         <HStack spacing={{ "md": "6em", "lg": "7em" }} paddingLeft={{ "md": "3em", "lg": "4em" }}>

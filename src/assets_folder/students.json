@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Austin Jamias",
+        "title": "member",
+        "image_path": "./studentImages/austin_jamias.jpg",
+        "major": "Computer Engineering",
+        "college": "ENG",
+        "year": "2025",
+        "funfact": "likes spicy food"
+    },
+    {
+        "name": "Father Brown",
+        "title": "member",
+        "image_path": "./studentImages/father_brown.jpg",
+        "major": "Math and CS",
+        "college": "CAS",
+        "year": "2025",
+        "funfact": "enjoys eating apples on BU Beach"
+    },
+    {
+        "name": "Austin Jamias",
+        "title": "member",
+        "image_path": "./studentImages/austin_jamias.jpg",
+        "major": "Computer Engineering",
+        "college": "ENG",
+        "year": "2025",
+        "funfact": "likes spicy food"
+    }, 
+    {
+        "name": "Austin Jamias",
+        "title": "member",
+        "image_path": "./studentImages/austin_jamias.jpg",
+        "major": "Computer Engineering",
+        "college": "ENG",
+        "year": "2025",
+        "funfact": "likes spicy food"
+    },
+    {
+        "name": "Austin Jamias",
+        "title": "member",
+        "image_path": "./studentImages/austin_jamias.jpg",
+        "major": "Computer Engineering",
+        "college": "ENG",
+        "year": "2025",
+        "funfact": "likes spicy food"
+    }
+]

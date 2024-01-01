@@ -5,8 +5,8 @@ import { HStack, VStack, Text, Button, Collapse, Box, useBreakpointValue } from 
 import IntroBanner from "./IntroBanner";
 import MemberFrame from "./MemberFrame";
 
-import students from "../../../assets_folder/students.json";
-import profile1 from "./../../../assets_folder/tempProfile.jpg";
+import students from "../../assets_folder/students.json";
+import profile1 from "./../../assets_folder/tempProfile.jpg";
 
 function MemberDesk() {
     const [funFactVisibilities, setFunFactVisibilities] = useState(students.map(() => false));

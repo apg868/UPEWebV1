@@ -8,7 +8,7 @@ import MemberFrame from "./MemberFrame";
 import students from "../../assets_folder/students.json";
 import profile1 from "./../../assets_folder/tempProfile.jpg";
 
-function MemberDesk() {
+function MembersPage() {
     const [funFactVisibilities, setFunFactVisibilities] = useState(students.map(() => false));
 
     const toggleFunFact = (index) => {
@@ -77,4 +77,4 @@ function MemberDesk() {
         </VStack>
     )
 }
-export default MemberDesk
+export default MembersPage

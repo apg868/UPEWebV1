@@ -7,7 +7,7 @@ import MainPage from './components/MainPage/MainPage';
 import Footer from './components/Footer.js';
 import InternProjects from './components/InternProjects/InternProjects';
 import AboutUs from './components/AboutUs';
-import MemberDesk from './components/MembersPage/MemberDesk.js';
+import MembersPage from './components/MembersPage/MembersPage.js';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
 
           <Routes>
             <Route exact path="/" element={<MainPage />} />
-            <Route exact path="/members" element={<MemberDesk />} />
+            <Route exact path="/members" element={<MembersPage />} />
             <Route exact path="/intern-projects" element={<InternProjects />} />
             <Route exact path="/about-us" element={<AboutUs />} />
           </Routes>

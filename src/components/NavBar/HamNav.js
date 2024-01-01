@@ -17,7 +17,9 @@ import logoRED from "./../../assets_folder/logoRED.png";
 function HamNav() {
   return (
     <Flex align="center" justifyContent="space-between" w="100%" p={3} bg="primaryGray" borderBottom="2px" borderBottomColor="primaryRed">
-      <Image src={logoRED} boxSize="5em" borderRadius="4em" />
+      <Link to="/">
+        <Image src={logoRED} boxSize="5em" borderRadius="4em" />
+      </Link>
 
       <Menu position="0">
         {({ isOpen }) => (

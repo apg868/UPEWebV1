@@ -1,12 +1,18 @@
 import { Flex, HStack, Image, Text } from "@chakra-ui/react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logoRED from './../../assets_folder/logoRED.png';
 
 function BaseNav() {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/');
+  };
+
   return (
     <Flex position="sticky" top={0} left={0} right={0} bg={{ "md": "primaryGray" }} w='100%' h="9vh" zIndex={1} borderBottom="2px" borderBottomColor="primaryRed">
       <HStack spacing={{ "md": "3em", "lg": "15em" }}>
-        <Image src={logoRED} boxSize="9vh" borderRadius="4em" />
+        <Image src={logoRED} boxSize="9vh" borderRadius="4em" style={{ cursor: 'pointer' }} onClick={handleLogoClick} />
         <HStack spacing={{ "md": "6em", "lg": "7em" }} paddingLeft={{ "md": "3em", "lg": "4em" }}>
           <Link to="/">
             <Text fontFamily="secondaryFont" fontWeight="light" fontSize={{ "md": "xl", "lg": "2xl" }} pt={1}

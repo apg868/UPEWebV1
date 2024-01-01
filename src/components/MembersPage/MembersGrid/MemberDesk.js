@@ -1,57 +1,79 @@
-import profile1 from "./../../../assets_folder/tempProfile.jpg";
-import MemberFrame from "./MemberFrame";
-import { HStack, VStack, Text, Button, Collapse, Box } from "@chakra-ui/react";
+import React, { useState } from "react";
+
+import { HStack, VStack, Text, Button, Collapse, Box, useBreakpointValue } from "@chakra-ui/react";
+
 import IntroBanner from "./IntroBanner";
-import React, {useState} from "react";
+import MemberFrame from "./MemberFrame";
 
-import student_list from '../../../assets_folder/students.json';
+import students from "../../../assets_folder/students.json";
+import profile1 from "./../../../assets_folder/tempProfile.jpg";
 
-function MemberDesk(){
-    /* we can have a class Student and map all Student objects in a list to the MemberFrame component
-        import student_list from '../../../assets_folder/students.json';
-        import studentImages from '../../../assets_folder/studentImages';
-
-        <HStack spacing="4rem">
-        {student_list.map((idx, student) => {
-            return <MemberFrame name={student.name} title={student.title} image={student.image_path} 
-            major={student.major} college={student.college} year={student.year} funfact={student.funfact} />
-        })}
-        </HStack>
-    */
-    const [isFunFactVisible, setIsFunFactVisible] = useState(student_list.map(() => false));
+function MemberDesk() {
+    const [funFactVisibilities, setFunFactVisibilities] = useState(students.map(() => false));
 
     const toggleFunFact = (index) => {
-        const updatedVisibility = [...isFunFactVisible];
-        updatedVisibility[index] = !updatedVisibility[index];
-        setIsFunFactVisible(updatedVisibility);
+        const newVisibilities = [...funFactVisibilities];
+        newVisibilities[index] = !newVisibilities[index];
+        setFunFactVisibilities(newVisibilities);
     };
 
-    let student_sub_list = [];
-    for (let i = 0; i < student_list.length; i += 3) {
-        student_sub_list.push(student_list.slice(i, i + 3));
+    const breakpoint = useBreakpointValue({ base: "base", md: "md", lg: "lg" });
+
+    let ROW_LENGTH;
+    switch (breakpoint) {
+        case "lg":
+            ROW_LENGTH = 3;
+            break;
+        case "md":
+            ROW_LENGTH = 2;
+            break;
+        case "base":
+            ROW_LENGTH = 1;
+            break;
     }
 
-    return(
+
+    let officers = students.filter(x => x.title !== "member");
+    let officerRows = [];
+    for (let i = 0; i < officers.length; i += ROW_LENGTH) {
+        officerRows.push(officers.slice(i, i + ROW_LENGTH));
+    }
+
+    let plebs = students.filter(x => x.title == "member");
+    let plebRows = [];
+    for (let i = 0; i < plebs.length; i += ROW_LENGTH) {
+        plebRows.push(plebs.slice(i, i + ROW_LENGTH));
+    }
+
+    function getStudentGrid(studentRows) {
+        return studentRows.map((row, i) => {
+            return (
+                <HStack spacing="4rem">
+                    {row.map((student, j) => {
+                        let student_index = i * ROW_LENGTH + j;
+                        return (
+                            <VStack>
+                                <MemberFrame student={student} image={profile1} />
+                                <Button onClick={() => toggleFunFact(student_index)} colorScheme="teal">About Me</Button>
+                                <Collapse in={funFactVisibilities[student_index]}>
+                                    <Box p={4} mt={4} borderWidth="1px" borderRadius="md">
+                                        <Text fontFamily="bannerFont" fontSize="md"> {student.funfact} </Text>
+                                    </Box>
+                                </Collapse>
+                            </VStack>
+                        )
+                    })}
+                </HStack>
+            )
+        })
+    }
+
+    return (
         <VStack spacing="2rem" paddingTop="3rem">
-        <IntroBanner/>
-
-        {student_sub_list.map((sub_list, idx1) => {
-            return <HStack spacing="4rem" key={idx1 * 7}>
-            {sub_list.map((student, idx2) => {
-                return <VStack key={idx1 * 7 + idx2 * 6 + 1}>
-                <MemberFrame name={student.name} title={student.title} image={profile1} 
-                major={student.major} college={student.college} year={student.year} key={idx1 * 7 + idx2 * 6 + 2}/>
-                <Button onClick={() => toggleFunFact(idx1 * 3 + idx2)} colorScheme="teal" key={idx1 * 7 + idx2 * 6 + 3}>About Me</Button>
-                <Collapse in={isFunFactVisible[idx1 * 3 + idx2]} key={idx1 * 7 + idx2 * 6 + 4}>
-                    <Box p={4} mt={4} borderWidth="1px" borderRadius="md" key={idx1 * 7 + idx2 * 6 + 5}>
-                    <Text fontFamily="bannerFont" fontSize="md" key={idx1 * 7 + idx2 * 6 + 6}> {student.funfact} </Text>
-                    </Box>
-                </Collapse>
-                </VStack>
-            })}
-            </HStack>
-        })}
-
+            <IntroBanner content={"E-Board"} />
+            {getStudentGrid(officerRows)}
+            <IntroBanner content={"Current Members"} />
+            {getStudentGrid(plebRows)}
         </VStack>
     )
 }

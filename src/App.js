@@ -12,20 +12,20 @@ import AboutUs from './components/AboutUs';
 function App() {
   return (
     <ChakraProvider theme={themeProv}>
-      <BrowserRouter> {/* <-- Add this */}
+      <BrowserRouter>
         <>
           <NavBar />
 
           <Routes>
             <Route exact path="/" element={<MainPage />} />
-            <Route exact path="/members" element={<MembersPage/>} />
-            <Route exact path="/intern-projects" element={<InternProjects/>} />
-            <Route exact path="/about-us" element={<AboutUs/>} />
+            <Route exact path="/members" element={<MembersPage />} />
+            <Route exact path="/intern-projects" element={<InternProjects />} />
+            <Route exact path="/about-us" element={<AboutUs />} />
           </Routes>
 
           <Footer />
         </>
-      </BrowserRouter> {/* <-- Add this */}
+      </BrowserRouter>
     </ChakraProvider>
   );
 }

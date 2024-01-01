@@ -50,6 +50,11 @@ function HamNav() {
                   About Us
                 </Text>
               </MenuItem>
+              <MenuItem as={Link} to="https://calendar.google.com/calendar/u/0?cid=Y19lZGQ0Y2ZkZjBmYjA0OWRkZGI3MmQwNzU4Y2Y1MTE1NTViZWYzZDJmZDQ1Mzk4MmRiNDI0MGEyNzJlNTI5MmI5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
+                <Text fontFamily="secondaryFont" fontWeight="light">
+                  Calendar
+                </Text>
+              </MenuItem>
             </MenuList>
           </>
         )}

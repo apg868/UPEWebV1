@@ -8,7 +8,7 @@ function Banner(props) {
         <Flex
             bgImage={props.bannerImage}
             w={{base: "100vw"}}
-            h={{ base: "50vh", md: "60vh" }}
+            h={{ base: "60vh", md: "40vh", lg: "50vh"}}
             alignItems="flex-start"
             justifyContent="flex-start"
             padding="2em"
@@ -18,6 +18,7 @@ function Banner(props) {
             // Add background position and size properties to the image
             backgroundPosition="center" // Center the image
             backgroundSize="cover" // Crop the sides while maintaining aspect ratio
+            borderBottom="2px solid red"
         >
             <Box
                 background="rgb(218,218,218,1)"

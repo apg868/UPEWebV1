@@ -9,7 +9,7 @@ function MainPage(){
     return(
         <>
         <Banner bannerImage={bannerImage} logo={true} />
-        <BannerTransition text="UPE: Your Gateway to CS Excellence" />
+        <BannerTransition text="Your Gateway to CS Excellence" />
         <Cards cardH="30em"/>
         <CTA/>
         </>

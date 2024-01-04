@@ -1,4 +1,4 @@
-import { Box, Text, VStack, border } from "@chakra-ui/react";
+import { Box, Text, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 
 function CardFrame2(props) {
@@ -55,7 +55,7 @@ function CardFrame2(props) {
               fontSize="lg"
               textAlign="center"
             >
-              {props.title}
+              {title}
             </Text>
           </Box>
         )}
@@ -71,7 +71,7 @@ function CardFrame2(props) {
               fontWeight="normal"
               fontSize="lg"
             >
-              {props.description}
+              {description}
             </Text>
           </Box>
         )}

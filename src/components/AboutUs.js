@@ -1,4 +1,4 @@
-import { useBreakpointValue, Flex, Text, Box, Image, HStack, VStack } from "@chakra-ui/react";
+import { useBreakpointValue, Flex, HStack, VStack } from "@chakra-ui/react";
 import CardFrame2 from "./MainPage/CardSect/CardFrame2";
 import Banner from './MainPage/BannerTop/Banner';
 import bannerImage from '../assets_folder/aboutBanner.jpg';

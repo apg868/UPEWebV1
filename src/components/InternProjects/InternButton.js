@@ -9,7 +9,6 @@ function InternBox() {
                 fontFamily="bannerFont"
                 w={{"base":"60vw","md":"40vw", "lg":"30vw"}}
                 h="3em"
-                opacity="0.8"
                 borderRadius="0.5em"
                 alignItems="center"
                 justifyContent="center"

@@ -29,13 +29,13 @@ function BaseNav() {
           <Link to="/intern-projects">
             <Text fontFamily="secondaryFont" fontWeight="light" fontSize={{ "md": "xl", "lg": "2xl" }} pt={1}
               _hover={{ color: "secondaryRed" }}>
-              Intern Projects
+              Projects
             </Text>
           </Link>
           <Link to="/about-us">
             <Text fontFamily="secondaryFont" fontWeight="light" fontSize={{ "md": "xl", "lg": "2xl" }} pt={1}
               _hover={{ color: "secondaryRed" }}>
-              About Us
+              About
             </Text>
           </Link>
           <Link to="https://calendar.google.com/calendar/u/0?cid=Y19lZGQ0Y2ZkZjBmYjA0OWRkZGI3MmQwNzU4Y2Y1MTE1NTViZWYzZDJmZDQ1Mzk4MmRiNDI0MGEyNzJlNTI5MmI5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">

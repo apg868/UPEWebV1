@@ -39,19 +39,11 @@ function CTADesk() {
                                 bg="white"
                                 borderRadius="2em"
                                 fontFamily="secondaryFont"
-                                fontWeight="normal"
                                 color="primaryRed"
-                                w={{ "md": "10em", "lg": "13em" }}
                                 fontSize={{ "md": "2xl", "lg": "3xl" }}
-                                isDisabled={true}
                                 _hover={{ bg: "secondaryRed", textColor: "white" }}
-                                borderRadius="2em"
-                                fontFamily="secondaryFont"
-                                fontWeight="bold"
-                                color="primaryRed"
                                 h="3em"
                                 w={{base: "12em", lg: "15em"}}
-                                fontSize={{ "md": "2xl", "lg": "3xl" }}
                             >
                                 Interview Sign-up
                             </Button>

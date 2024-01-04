@@ -25,7 +25,7 @@
         "college": "ENG",
         "year": "2025",
         "funfact": "likes spicy food"
-    }, 
+    },
     {
         "name": "Austin Jamias",
         "title": "member",
@@ -43,5 +43,14 @@
         "college": "ENG",
         "year": "2025",
         "funfact": "likes spicy food"
+    },
+    {
+        "name": "Sai Nayunipati",
+        "title": "Marketing",
+        "image_path": "./studentImages/austin_jamias.jpg",
+        "major": "Computer Science",
+        "college": "CAS",
+        "year": "2025",
+        "funfact": "SWE Intern at JSEC"
     }
 ]

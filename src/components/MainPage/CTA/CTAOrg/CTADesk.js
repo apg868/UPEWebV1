@@ -37,6 +37,13 @@ function CTADesk() {
                         <a href="https://www.signupgenius.com/go/10C084EA5AA29A2F4CF8-upeinterview#" target="_blank" rel="noopener noreferrer">
                             <Button
                                 bg="white"
+                                borderRadius="2em"
+                                fontFamily="secondaryFont"
+                                fontWeight="normal"
+                                color="primaryRed"
+                                w={{ "md": "10em", "lg": "13em" }}
+                                fontSize={{ "md": "2xl", "lg": "3xl" }}
+                                isDisabled={true}
                                 _hover={{ bg: "secondaryRed", textColor: "white" }}
                                 borderRadius="2em"
                                 fontFamily="secondaryFont"

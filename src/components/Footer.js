@@ -21,24 +21,24 @@ function Footer() {
         >
             <Image src={logoWHITE} width={["100px", "150px", "200px"]} height={["80px", "120px", "160px"]} opacity="60%" borderRadius={10} />
             <VStack spacing={2} align={["center", "center", "flex-start"]}>
-                <Text color="gray" fontFamily="secondaryFont" fontWeight="bold" fontSize="md">
+                <Text color="black" fontFamily="secondaryFont" fontWeight="bold" fontSize="md">
                     Navigation
                 </Text>
-                <Text fontFamily="primaryFont" fontWeight="medium" fontSize="md" color="gray">
+                <Text fontFamily="primaryFont" fontWeight="medium" fontSize="md" color="gray" _hover={{textDecoration: "underline", textDecorationColor: "grey"}}>
                     <Link to="/">Home</Link>
                 </Text>
-                <Text fontFamily="primaryFont" fontWeight="medium" fontSize="md" color="gray">
+                <Text fontFamily="primaryFont" fontWeight="medium" fontSize="md" color="gray" _hover={{textDecoration: "underline", textDecorationColor: "grey"}}>
                     <Link to="/members">Members</Link>
                 </Text>
-                <Text fontFamily="primaryFont" fontWeight="medium" fontSize="md" color="gray">
+                <Text fontFamily="primaryFont" fontWeight="medium" fontSize="md" color="gray" _hover={{textDecoration: "underline", textDecorationColor: "grey"}}>
                     <Link to="/intern-projects">Intern Projects</Link>
                 </Text>
-                <Text fontFamily="primaryFont" fontWeight="medium" fontSize="md" color="gray">
+                <Text fontFamily="primaryFont" fontWeight="medium" fontSize="md" color="gray" _hover={{textDecoration: "underline", textDecorationColor: "grey"}}>
                     <Link to="/about-us">About Us</Link>
                 </Text>
             </VStack>
             <VStack spacing={2} align={["center", "center", "flex-start"]}>
-                <Text color="gray" fontFamily="secondaryFont" fontWeight="bold" fontSize="md">
+                <Text color="black" fontFamily="secondaryFont" fontWeight="bold" fontSize="md">
                     Connect with us on social media!
                 </Text>
                 <HStack spacing={1}>

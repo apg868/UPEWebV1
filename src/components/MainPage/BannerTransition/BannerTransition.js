@@ -13,8 +13,10 @@ function BannerTransition(props) {
             alignItems="center"
         >
             <Flex
-                bg="primaryRed"
-                w={{"base":"30em","md":"60em","lg":"90em"}}
+                bg="rgb(198, 18, 31, 1)"
+                border="1px solid white"
+                w={{"base":"90%","md":"95%"}}
+                h={{base: "2em", lg:"3em"}}
                 borderRadius="2em"
                 justifyContent="center"
                 alignItems="center"

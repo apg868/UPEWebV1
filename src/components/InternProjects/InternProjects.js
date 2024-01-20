@@ -8,12 +8,21 @@ const slidesData = [
     {
         image: Image1,
         name: "John Doe",
-        description: "A brief description about John Doe."
+        description: "A brief description about John Doe.",
+        extendedDescription: "A brief description about John Doe.",
+        technologies: "react, jsx",
+        challenges: "time, organization etc",
+        time: "10 hours",
+
     },
     {
         image: Image2,
         name: "Jane Smith",
-        description: "Description for Jane Smith."
+        description: "Description for Jane Smith.",
+        extendedDescription: "Jane smith's project was a wonderful endeavor. It took this much time, involved these technologies, had these challenges etc",
+        technologies: "react, jsx",
+        challenges: "time, organization etc",
+        time: "10 hours",
     }
 ];
 

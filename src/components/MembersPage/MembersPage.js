@@ -17,13 +17,13 @@ import students from "../../assets_folder/students.json";
 
 function MembersPage() {
   const [funFactVisibilities, setFunFactVisibilities] = useState(
-    students.map(() => false)
+    Object.fromEntries(students.map((x) => [x.id, false]))
   );
 
-  const toggleFunFact = (index) => {
-    const newVisibilities = [...funFactVisibilities];
-    newVisibilities[index] = !newVisibilities[index];
-    setFunFactVisibilities(newVisibilities);
+  const toggleFunFact = (studentId) => {
+    let clone = Object.assign({}, funFactVisibilities);
+    clone[studentId] = !clone[studentId];
+    setFunFactVisibilities(clone);
   };
 
   const breakpoint = useBreakpointValue({ base: "base", md: "md", lg: "lg" });
@@ -58,18 +58,17 @@ function MembersPage() {
       return (
         <HStack spacing="4rem">
           {row.map((student, j) => {
-            let student_index = i * ROW_LENGTH + j;
             return (
-              <VStack>
+              <VStack key={student.id}>
                 <MemberFrame student={student} image={student.image_path} />
                 <Button
                   isDisabled={!student.funfact || student.funfact.length === 0}
-                  onClick={() => toggleFunFact(student_index)}
+                  onClick={() => toggleFunFact(student.id)}
                   colorScheme="teal"
                 >
                   About Me
                 </Button>
-                <Collapse in={funFactVisibilities[student_index]}>
+                <Collapse in={funFactVisibilities[student.id]}>
                   <Box p={4} mt={4} borderWidth="1px" borderRadius="md">
                     <Text fontFamily="bannerFont" fontSize="md">
                       {" "}

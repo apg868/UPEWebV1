@@ -2,16 +2,13 @@ import { Flex, Text, Image, VStack } from "@chakra-ui/react";
 
 import placeholderAvatar from "./../../assets_folder/user.svg";
 
-function MemberFrame({ student, image }) {
-  const name = student.name;
-  const title = student.title ?? null;
-  const major = student.major ?? null;
-  const year = student.year ?? null;
+function MemberFrame({ student }) {
+  const { name, title, major, year, image_path } = student;
 
   var avatar;
 
   try {
-    avatar = require(`./../../assets_folder/student_images/${image}`);
+    avatar = require(`./../../assets_folder/student_images/${image_path}`);
   } catch {
     avatar = placeholderAvatar;
   }
@@ -28,21 +25,16 @@ function MemberFrame({ student, image }) {
         />
         <VStack spacing="0.1rem" marginLeft="0.5rem" marginRight="0.5rem">
           <Text fontFamily="bannerFont" fontSize="md">
-            {" "}
-            {name}{" "}
+            {` ${name} `}
           </Text>
           <Text fontFamily="bannerFont" fontSize="md">
-            {" "}
-            {title}
+            {` ${title} `}
           </Text>
           <Text fontFamily="bannerFont" fontSize="sm">
-            {" "}
-            {major}{" "}
+            {` ${major} `}
           </Text>
           <Text fontFamily="bannerFont" fontSize="md">
-            {" "}
-            {year && "Class of "}
-            {year}{" "}
+            {` Class of ${year} `}
           </Text>
         </VStack>
       </VStack>

@@ -1,56 +1,337 @@
 [
-    {
-        "name": "Austin Jamias",
-        "title": "member",
-        "image_path": "./studentImages/austin_jamias.jpg",
-        "major": "Computer Engineering",
-        "college": "ENG",
-        "year": "2025",
-        "funfact": "likes spicy food"
-    },
-    {
-        "name": "Father Brown",
-        "title": "member",
-        "image_path": "./studentImages/father_brown.jpg",
-        "major": "Math and CS",
-        "college": "CAS",
-        "year": "2025",
-        "funfact": "enjoys eating apples on BU Beach"
-    },
-    {
-        "name": "Austin Jamias",
-        "title": "member",
-        "image_path": "./studentImages/austin_jamias.jpg",
-        "major": "Computer Engineering",
-        "college": "ENG",
-        "year": "2025",
-        "funfact": "likes spicy food"
-    },
-    {
-        "name": "Austin Jamias",
-        "title": "member",
-        "image_path": "./studentImages/austin_jamias.jpg",
-        "major": "Computer Engineering",
-        "college": "ENG",
-        "year": "2025",
-        "funfact": "likes spicy food"
-    },
-    {
-        "name": "Austin Jamias",
-        "title": "member",
-        "image_path": "./studentImages/austin_jamias.jpg",
-        "major": "Computer Engineering",
-        "college": "ENG",
-        "year": "2025",
-        "funfact": "likes spicy food"
-    },
-    {
-        "name": "Sai Nayunipati",
-        "title": "Marketing",
-        "image_path": "./studentImages/austin_jamias.jpg",
-        "major": "Computer Science",
-        "college": "CAS",
-        "year": "2025",
-        "funfact": "SWE Intern at JSEC"
-    }
+  {
+    "name": "Matthew Berk",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025",
+    "image_path": "matthew_berk.jpg"
+  },
+  {
+    "name": "Louis Grassi",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Hilal Sena Bayram",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Tsz Kit Wong",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025",
+    "image_path": "tsz_kit_wong.jpg"
+  },
+  {
+    "name": "Aden Lazarus",
+    "title": "Member",
+    "major": "Computer Science + Math",
+    "year": "2027"
+  },
+  {
+    "name": "Ahmed Alwahedi",
+    "title": "Member",
+    "major": "Computer Science + Math",
+    "year": "2027"
+  },
+  {
+    "name": "Aidan Clark",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Grace Murphy",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Camille Christie",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025",
+    "image_path": "camille_christie.jpg"
+  },
+  {
+    "name": "Derek Roberts",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2024",
+    "funfact": "SWE @ John Hancock",
+    "image_path": "derek_roberts.jpg"
+  },
+  {
+    "name": "Noah Barnes",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025",
+    "image_path": "noah_barnes.jpg"
+  },
+  {
+    "name": "Andrew Pio George",
+    "title": "Member",
+    "major": "Computer Science + Math",
+    "year": "2025",
+    "image_path": "andrew_pio_george.jpg"
+  },
+  {
+    "name": "Asad Soomro",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Austin Jamias",
+    "title": "Member",
+    "major": "Computer Engineering",
+    "year": "2025"
+  },
+  {
+    "name": "Dylan Lee",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2027"
+  },
+  {
+    "name": "Phillip Tran",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2024"
+  },
+  {
+    "name": "Matthew Hilliard",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Natalie Cheng",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025",
+    "image_path": "natalie_chen.jpg"
+  },
+  {
+    "name": "Brinja Vogler",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Esha Wadher",
+    "title": "Member",
+    "major": "Computer Science + Economics",
+    "year": "2026"
+  },
+  {
+    "name": "James Davin",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2024"
+  },
+  {
+    "name": "James Liu",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2027"
+  },
+  {
+    "name": "Jason Jiang",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2026",
+    "image_path": "jason_jiang.jpg"
+  },
+  {
+    "name": "Sydney Jenkin",
+    "title": "Member",
+    "major": "Computer Science + Biology",
+    "year": "2024",
+    "image_path": "sydney_jenkin.jpg"
+  },
+  {
+    "name": "Jae Hong Lee",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Wesley Choi",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Dominic Maglione",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2024"
+  },
+  {
+    "name": "Jiang Cheng Liu",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Jorge Lozano",
+    "title": "Member",
+    "major": "Computer Science + Economics",
+    "year": "2026",
+    "image_path": "jorge_lozano.jpg"
+  },
+  {
+    "name": "Josh Yip",
+    "title": "Member",
+    "major": "Data Science",
+    "year": "2025",
+    "image_path": "josh_yip.jpg"
+  },
+  {
+    "name": "Lucia Kisova",
+    "title": "Member",
+    "major": "Computer Science + Biology",
+    "year": "2024"
+  },
+  {
+    "name": "Marcus Izumi",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2027",
+    "image_path": "marcus_izumi.jpg"
+  },
+  {
+    "name": "Prisha Sharma",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2026"
+  },
+  {
+    "name": "Rowan Whelan",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Sam Cowan",
+    "title": "Member",
+    "major": "Data Science",
+    "year": "2027",
+    "image_path": "sam_cowan.jpg"
+  },
+  {
+    "name": "Sophia Howson",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025"
+  },
+  {
+    "name": "Vincent Le",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2027"
+  },
+  {
+    "name": "Marcos Oyler",
+    "title": "Member",
+    "major": "Data Science",
+    "year": "2026"
+  },
+  {
+    "name": "Lydia Palmer",
+    "title": "Member",
+    "major": "Computer Science + Physics",
+    "year": "2027"
+  },
+  {
+    "name": "Ivan Khramtchenko",
+    "title": "Member",
+    "major": "Computer Science",
+    "year": "2025",
+    "image_path": "ivan_khramtchenko.jpg"
+  },
+  {
+    "name": "Aaron Ang",
+    "title": "Member",
+    "major": "Computer Science + Economics",
+    "year": "2026",
+    "image_path": "aaron_ang.jpg"
+  },
+
+  {
+    "name": "Matthew Henriksen",
+    "title": "President",
+    "image_path": "matthew_henriksen.jpg",
+    "major": "Computer Science",
+    "college": "CAS",
+    "year": "2024",
+    "funfact": "SWE @ Capitol One"
+  },
+  {
+    "name": "Elaine Leiyoung",
+    "title": "Vice President",
+    "image_path": "elaine_leiyoung.jpg",
+    "major": "Computer Science + Economics",
+    "college": "CAS",
+    "year": "2024",
+    "funfact": "SWE @ Goldman Sachs"
+  },
+  {
+    "name": "Lindsay Liu",
+    "title": "Secretary",
+    "image_path": "lindsay_liu.jpg",
+    "major": "Computer Science",
+    "college": "CAS",
+    "year": "2025",
+    "funfact": "Future Software Engineer"
+  },
+  {
+    "name": "Thinh Nguyen",
+    "title": "Treasurer",
+    "image_path": "thinh_nguyen.jpg",
+    "major": "Computer Engineering",
+    "college": "ENG",
+    "year": "2025",
+    "funfact": "Future Software Engineer"
+  },
+  {
+    "name": "Grace Elias",
+    "title": "Recruitment",
+    "image_path": "grace_elias.jpg",
+    "major": "Computer Science",
+    "college": "CAS",
+    "year": "2025",
+    "funfact": "SWE Intern @ Epic"
+  },
+  {
+    "name": "Toby Ueno",
+    "title": "Internal Improvements",
+    "image_path": "toby_ueno.jpg",
+    "major": "C.S. + Linguistics/Philosophy",
+    "college": "CAS",
+    "year": "2025",
+    "funfact": "SWE Intern @ Roblox"
+  },
+  {
+    "name": "Megha Bharadwaj",
+    "title": "Internal Development",
+    "image_path": "megha_bharadwaj.jpg",
+    "major": "Computer Science + Public Relations",
+    "college": "CAS",
+    "year": "2025",
+    "funfact": "Product Marketing Intern @ MongoDB"
+  },
+  {
+    "name": "Sai Nayunipati",
+    "title": "Marketing",
+    "image_path": "sai_nayunipati.jpg",
+    "major": "Computer Science + Statistics",
+    "college": "CAS",
+    "year": "2025",
+    "funfact": "SWE Intern @ JSEC"
+  }
 ]

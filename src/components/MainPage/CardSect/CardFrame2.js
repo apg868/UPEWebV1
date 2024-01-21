@@ -55,6 +55,12 @@ function CardFrame2(props) {
               color="black"
               fontSize="2xl"
               textAlign="center"
+              _hover={{
+                cursor: "pointer",
+                transform: "scale(1.05)",
+                transition: "transform 500ms",
+              }}
+        
             >
               {title}
             </Text>

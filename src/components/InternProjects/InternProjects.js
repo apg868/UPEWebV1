@@ -3,6 +3,7 @@ import CaptionCarousel from "./Carousel";
 import InternBox from "./InternButton";
 import Image1 from "./../../assets_folder/card2.jpg"
 import Image2 from "./../../assets_folder/card3.jpg"
+import IntroBanner from "../MembersPage/IntroBanner";
 
 const slidesData = [
     {
@@ -29,7 +30,7 @@ const slidesData = [
 function InternProjects(){
     return(
         <VStack spacing="2em" paddingTop="2em">
-            <InternBox/>
+            <IntroBanner content="See Some of Our Highlighted Projects Below" />
             <CaptionCarousel slides={slidesData}/>
         </VStack>
     )

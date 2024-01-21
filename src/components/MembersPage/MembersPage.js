@@ -26,12 +26,24 @@ function MembersPage() {
     setFunFactVisibilities(clone);
   };
 
-  const breakpoint = useBreakpointValue({ base: "base", md: "md", lg: "lg" });
+  const breakpoint = useBreakpointValue({
+    base: "base",
+    md: "md",
+    lg: "lg",
+    xl: "xl",
+    "2xl": "2xl",
+  });
 
   let ROW_LENGTH;
   switch (breakpoint) {
-    case "lg":
+    case "2xl":
+      ROW_LENGTH = 4;
+      break;
+    case "xl":
       ROW_LENGTH = 3;
+      break;
+    case "lg":
+      ROW_LENGTH = 2;
       break;
     case "md":
       ROW_LENGTH = 2;
@@ -42,37 +54,38 @@ function MembersPage() {
   }
 
   let officers = students.filter((x) => x.title !== "Member");
-  let officerRows = [];
-  for (let i = 0; i < officers.length; i += ROW_LENGTH) {
-    officerRows.push(officers.slice(i, i + ROW_LENGTH));
-  }
-
   let plebs = students.filter((x) => x.title == "Member");
-  let plebRows = [];
-  for (let i = 0; i < plebs.length; i += ROW_LENGTH) {
-    plebRows.push(plebs.slice(i, i + ROW_LENGTH));
+
+  function matrixizeMemberList(members, rowLength) {
+    let memberRows = [];
+    for (let i = 0; i < members.length; i += rowLength) {
+      memberRows.push(members.slice(i, i + rowLength));
+    }
+
+    return memberRows;
   }
 
-  function getStudentGrid(studentRows) {
-    return studentRows.map((row, i) => {
+  function getGridJsx(members) {
+    let membersMatrix = matrixizeMemberList(members, ROW_LENGTH);
+
+    return membersMatrix.map((row) => {
       return (
         <HStack spacing="4rem">
-          {row.map((student, j) => {
+          {row.map((member) => {
             return (
-              <VStack key={student.id}>
-                <MemberFrame student={student} image={student.image_path} />
+              <VStack key={member.id}>
+                <MemberFrame student={member} />
                 <Button
-                  isDisabled={!student.funfact || student.funfact.length === 0}
-                  onClick={() => toggleFunFact(student.id)}
+                  isDisabled={!member.funfact}
+                  onClick={() => toggleFunFact(member.id)}
                   colorScheme="teal"
                 >
                   About Me
                 </Button>
-                <Collapse in={funFactVisibilities[student.id]}>
+                <Collapse in={funFactVisibilities[member.id]}>
                   <Box p={4} mt={4} borderWidth="1px" borderRadius="md">
                     <Text fontFamily="bannerFont" fontSize="md">
-                      {" "}
-                      {student.funfact}{" "}
+                      {` ${member.funfact} `}
                     </Text>
                   </Box>
                 </Collapse>
@@ -87,9 +100,9 @@ function MembersPage() {
   return (
     <VStack spacing="2rem" paddingTop="3rem">
       <IntroBanner content={"E-Board"} />
-      {getStudentGrid(officerRows)}
+      {getGridJsx(officers)}
       <IntroBanner content={"Current Members"} />
-      {getStudentGrid(plebRows)}
+      {getGridJsx(plebs)}
     </VStack>
   );
 }

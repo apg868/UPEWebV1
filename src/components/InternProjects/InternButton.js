@@ -4,16 +4,16 @@ function InternBox() {
     return (
         <Flex justifyContent="center" w="60%">
             <Flex
-                backgroundColor="primaryRed"
-                color="white"
+                color="primaryRed"
                 fontFamily="bannerFont"
-                w={{"base":"60vw","md":"40vw", "lg":"30vw"}}
-                h="3em"
-                borderRadius="0.5em"
+                w={{"base":"20em","md":"30em", "lg":"50em"}}
+                h={{"base":"10em","md":"30em", "lg":"3em"}}
+                mb={{"base":"2em","md":"2em","lg":"2em"}}
+                mt={{"base":"2em","md":"2em","lg":"2em"}}
                 alignItems="center"
                 justifyContent="center"
             >
-                <Text fontSize="xl" fontFamily="secondaryFont">Our Intern Projects</Text>
+                <Text fontSize={{"base":"xl","md":"2xl","lg":"3xl"}} fontFamily="bannerFont">See Some of Our Highlighted Projects Below</Text>
             </Flex>
         </Flex>
     );

@@ -1,18 +1,18 @@
-import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // <-- Import this
-import themeProv from './theme';
-import NavBar from './components/NavBar/Nav';
-import MainPage from './components/MainPage/MainPage';
-import Footer from './components/Footer.js';
-import InternProjects from './components/InternProjects/InternProjects';
-import AboutUs from './components/AboutUs';
-import MembersPage from './components/MembersPage/MembersPage.js';
+import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+import { HashRouter, Routes, Route } from "react-router-dom"; // <-- Import this
+import themeProv from "./theme";
+import NavBar from "./components/NavBar/Nav";
+import MainPage from "./components/MainPage/MainPage";
+import Footer from "./components/Footer.js";
+import InternProjects from "./components/InternProjects/InternProjects";
+import AboutUs from "./components/AboutUs";
+import MembersPage from "./components/MembersPage/MembersPage.js";
 
 function App() {
   return (
     <ChakraProvider theme={themeProv}>
-      <BrowserRouter>
+      <HashRouter>
         <>
           <NavBar />
 
@@ -25,7 +25,7 @@ function App() {
 
           <Footer />
         </>
-      </BrowserRouter>
+      </HashRouter>
     </ChakraProvider>
   );
 }

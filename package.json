@@ -1,6 +1,7 @@
 {
   "name": "upe_web",
   "version": "0.1.0",
+  "homepage": "https://sai-nayunipati.github.io/upe-website",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",

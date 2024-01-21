@@ -31,12 +31,12 @@ function MembersPage() {
     md: "md",
     lg: "lg",
     xl: "xl",
-    "2xl": "2xl",
+    "3xl": "3xl",
   });
 
   let ROW_LENGTH;
   switch (breakpoint) {
-    case "2xl":
+    case "3xl":
       ROW_LENGTH = 4;
       break;
     case "xl":
@@ -52,6 +52,8 @@ function MembersPage() {
       ROW_LENGTH = 1;
       break;
   }
+
+  console.log(ROW_LENGTH);
 
   let officers = students.filter((x) => x.title !== "Member");
   let plebs = students.filter((x) => x.title == "Member");

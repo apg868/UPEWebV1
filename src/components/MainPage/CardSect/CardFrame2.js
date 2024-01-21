@@ -3,6 +3,7 @@ import { useState } from "react";
 
 function CardFrame2(props) {
   const title = props.title;
+  const titleInDescription = props.title.toLowerCase().charAt(0).toUpperCase() + props.title.toLowerCase().slice(1);
   const description = props.description;
 
   const [isFlipped, setIsFlipped] = useState(false);
@@ -52,7 +53,7 @@ function CardFrame2(props) {
               fontFamily="secondaryFont"
               fontWeight="bold"
               color="black"
-              fontSize="lg"
+              fontSize="2xl"
               textAlign="center"
             >
               {title}
@@ -66,6 +67,13 @@ function CardFrame2(props) {
             paddingRight={textPadding}
             transform="rotateY(180deg)"
           >
+            <Text
+              fontFamily="primaryFont"
+              fontWeight="semibold"
+              fontSize="lg"
+            >
+              {titleInDescription}
+            </Text>
             <Text
               fontFamily="primaryFont"
               fontWeight="normal"

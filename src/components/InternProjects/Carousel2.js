@@ -22,6 +22,7 @@ function InternshipCarousel({ slides }) {
 
     const currentImage = slides[currentSlide]?.image || "";
     const currentName = slides[currentSlide]?.name || "";
+    const currentMajor = slides[currentSlide]?.major || "";
     const currentDescription = slides[currentSlide]?.description || "";
     const currentCompany = slides[currentSlide]?.company || "";
 
@@ -32,23 +33,26 @@ function InternshipCarousel({ slides }) {
                 h="60vh"
                 bgImage={`url(${currentImage})`}
                 bgSize="cover"
-                bgPosition="center"
+                align="center"
+                bgPosition="center center"
                 position="relative"
             >
                 <VStack
-                    spacing={1}
+                    spacing={0.5}
                     position="absolute"
-                    bottom="5%"
-                    left="3%"
+                    bottom={{"base":"2%","md":"4%", "lg":"6%"}}
+                    left={{"base":"2%","md":"3%","lg":"4%"}}
                     bg="rgba(0,0,0,0.7)"
                     p={{"base":"0.5","md":"1","lg":"2"}}
-                    w="auto"
-                    borderRadius="md"
+                    w={{"base":"4rem","md":"5rem","large":"10rem"}}
+                    border="2px solid"
+                    borderColor="white"
                     alignItems="left"
                 >
-                    <Text fontSize={{"base":"sm","md":"md","lg":"xl"}} fontFamily="primaryFont" fontWeight="medium" color="white">{currentName}</Text>
-                    <Text fontSize={{"base":"sm","md":"md","lg":"xl"}} fontFamily="secondaryFont" color="white">{currentDescription}</Text>
-                    <Text fontSize={{"base":"sm","md":"md","lg":"xl"}} fontFamily="secondaryFont" color="white">{currentCompany}</Text>
+                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="primaryFont" fontWeight="medium" color="white">{currentName}</Text>
+                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="primaryFont" fontWeight="medium" color="white">{currentMajor}</Text>
+                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="secondaryFont" color="white">{currentDescription}</Text>
+                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="secondaryFont" color="white">{currentCompany}</Text>
                 </VStack>
 
                 <Button

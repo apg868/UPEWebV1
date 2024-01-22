@@ -44,7 +44,7 @@ function HamNav() {
               </MenuItem>
               <MenuItem as={Link} to="/intern-projects">
                 <Text fontFamily="secondaryFont" fontWeight="light">
-                  Intern Projects
+                  Highlights
                 </Text>
               </MenuItem>
               <MenuItem as={Link} to="/about-us">

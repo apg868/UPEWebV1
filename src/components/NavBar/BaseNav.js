@@ -29,7 +29,7 @@ function BaseNav() {
           <Link to="/intern-projects">
             <Text fontFamily="secondaryFont" fontWeight="light" fontSize={{ "md": "xl", "lg": "2xl" }} pt={1}
               _hover={{ color: "secondaryRed" }}>
-              Projects
+              Highlights
             </Text>
           </Link>
           <Link to="/about-us">

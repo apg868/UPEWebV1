@@ -74,7 +74,7 @@ function Footer() {
           color="gray"
           _hover={{ textDecoration: "underline", textDecorationColor: "grey" }}
         >
-          <Link to="/intern-projects">Intern Projects</Link>
+          <Link to="/intern-projects">Highlights</Link>
         </Text>
         <Text
           fontFamily="primaryFont"

@@ -25,7 +25,7 @@ function Slide({ slide, handlePrev, handleNext, handleFlip, isFlipped }) {
                         position="absolute"
                         bottom="10%"
                         left="5%"
-                        bg="rgba(0,0,0,0.7)"
+                        bg="rgba(0,0,0,0.8)"
                         p={{ base: "0.5", md: "1", lg: "2" }}
                         w={{ base: "10rem", md: "10rem", lg: "20em" }}
                         borderRadius="md"
@@ -57,7 +57,7 @@ function Slide({ slide, handlePrev, handleNext, handleFlip, isFlipped }) {
                 <>
                     <Box position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" w="70%" h="70%" bg="whiteAlpha.900" p={4} borderRadius="md" border="3px solid" borderColor="primaryRed" dropShadow="3px"
                     >
-                        <VStack spacing={{ "base": "1.5em", "sm":"2em", "md": "2em", "lg": "4em" }} align="left" fontSize={{ "base": "2xs","sm":"sm", "md": "xs", "lg": "md" }} fontFamily="primaryFont"
+                        <VStack spacing={{ "base": "1.5em", "sm":"2em", "md": "2em", "lg": "3em" }} align="left" fontSize={{ "base": "2xs","sm":"sm", "md": "xs", "lg": "md" }} fontFamily="primaryFont"
                         alignItems={{ base: "center", md: "flex-start" }}
                         width="100%"
                         height="100%"

@@ -42,7 +42,7 @@ function InternshipCarousel({ slides }) {
                     position="absolute"
                     bottom={{"base":"2%","md":"4%", "lg":"6%"}}
                     left={{"base":"2%","md":"3%","lg":"4%"}}
-                    bg="rgba(0,0,0,0.7)"
+                    bg="rgba(0,0,0,0.9)"
                     p={{"base":"0.5","md":"1","lg":"2"}}
                     w={{"base":"4rem","md":"5rem","large":"10rem"}}
                     border="2px solid"

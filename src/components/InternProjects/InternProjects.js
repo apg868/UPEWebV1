@@ -3,6 +3,8 @@ import CaptionCarousel from "./Carousel";
 import InternBox from "./InternButton";
 import Image1 from "./../../assets_folder/card2.jpg"
 import Image2 from "./../../assets_folder/card3.jpg"
+import Image1v2 from "./../../assets_folder/InternProjectsImages/Project1.png"
+import Image2v2 from "./../../assets_folder/InternProjectsImages/Project2.png"
 import IntroBanner from "../MembersPage/IntroBanner";
 import InternshipCarousel from "./Carousel2";
 import Intern1 from "./../../assets_folder/InternshipImages/Intern1.jpg"
@@ -12,23 +14,23 @@ import Intern3 from "./../../assets_folder/InternshipImages/Intern3v2.png"
 
 const slidesData = [
     {
-        image: Image1,
-        name: "John Doe",
-        description: "A brief description about John Doe.",
-        extendedDescription: "A brief description about John Doe.",
-        technologies: "react, jsx",
-        challenges: "time, organization etc",
-        time: "10 hours",
+        image: Image1v2,
+        name: "James Davin",
+        description: "A personal static website",
+        extendedDescription: "A personal static website featuring a Markdown-powered blog tool and an image gallery showcasing my personal portfolio of photographs.",
+        technologies: "Next.js, Typescript, Cloudinary",
+        challenges: "Learning to accept imperfect solutions for smaller problems so that I could solve more problems overall and create a better final product was a skill that I had to develop as development dragged on. In three words? Learning to compromise.",
+        time: "Approximately ~30-50 hours",
 
     },
     {
-        image: Image2,
-        name: "Jane Smith",
-        description: "Description for Jane Smith.",
-        extendedDescription: "Jane smith's project was a wonderful endeavor. It took this much time, involved these technologies, had these challenges etc",
-        technologies: "react, jsx",
-        challenges: "time, organization etc",
-        time: "10 hours",
+        image: Image2v2,
+        name: "Andrew Pio George, James Davin and Walker",
+        description: "Stock sentiment analysis tool",
+        extendedDescription: "A tool for any given NASDAQ/NYSE stock that webscrapes the most relevant news articles, passing them through a financial NLP model and returning a semantic analysis with various supplemental quantative metrics.",
+        technologies: "React, Django, Numpy, Pytorch, Axios, BeautifulSoup",
+        challenges: "Development and integration of the three moving parts - the React frontend, Django backend and the NLP model - in the strict time constraint of a 24-hour hackathon proved to be challenging.",
+        time: "72 hours",
     }
 ];
 

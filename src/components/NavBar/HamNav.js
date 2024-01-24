@@ -16,7 +16,15 @@ import logoRED from "./../../assets_folder/logoRED.png";
 
 function HamNav() {
   return (
-    <Flex align="center" justifyContent="space-between" w="100%" p={3} bg="primaryGray" borderBottom="2px" borderBottomColor="primaryRed">
+    <Flex
+      align="center"
+      justifyContent="space-between"
+      w="100%"
+      p={3}
+      bg="primaryGray"
+      borderBottom="2px"
+      borderBottomColor="primaryRed"
+    >
       <Link to="/">
         <Image src={logoRED} boxSize="5em" borderRadius="4em" />
       </Link>
@@ -52,7 +60,11 @@ function HamNav() {
                   About Us
                 </Text>
               </MenuItem>
-              <MenuItem as={Link} to="https://calendar.google.com/calendar/u/0?cid=Y19lZGQ0Y2ZkZjBmYjA0OWRkZGI3MmQwNzU4Y2Y1MTE1NTViZWYzZDJmZDQ1Mzk4MmRiNDI0MGEyNzJlNTI5MmI5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
+              <MenuItem
+                as={Link}
+                to="https://calendar.google.com/calendar/embed?src=c_edd4cfdf0fb049dddb72d0758cf511555bef3d2fd453982db4240a272e5292b9%40group.calendar.google.com&ctz=America%2FNew_York"
+                target="_blank"
+              >
                 <Text fontFamily="secondaryFont" fontWeight="light">
                   Calendar
                 </Text>

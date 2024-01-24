@@ -299,7 +299,7 @@
     "name": "Aaron Ang",
     "title": "Member",
     "major": "Computer Science + Economics",
-    "year": "2026",
+    "year": "2025",
     "image_path": "aaron_ang.jpg"
   },
 
@@ -328,7 +328,7 @@
     "image_path": "lindsay_liu.jpg",
     "major": "Computer Science",
     "year": "2025",
-    "funfact": "Future Software Engineer"
+    "funfact": "Data Analytics Intern @ Schneider Electric"
   },
   {
     "id": 44,
@@ -373,6 +373,6 @@
     "image_path": "sai_nayunipati.jpg",
     "major": "Computer Science + Statistics",
     "year": "2025",
-    "funfact": "SWE Intern @ JSEC"
+    "funfact": "SWE Intern @ Jacobs"
   }
 ]

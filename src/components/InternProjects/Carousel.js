@@ -134,12 +134,12 @@ function Slide({ slide, handlePrev, handleNext, handleFlip, isFlipped }) {
               <HStack
                 spacing={{ base: "2em", md: "2em", lg: "1.5em" }}
                 onClick={() =>
-                  isLargerThanBase ? null : handleModal(slide.challenges)
+                  isLargerThanBase ? null : handleModal(slide.skillsLearned)
                 }
               >
                 <Icon as={SpinnerIcon} />
-                <Text fontWeight="bold">Challenges Faced</Text>
-                {isLargerThanBase && <Text>{slide.challenges}</Text>}
+                <Text fontWeight="bold">Skills Learned</Text>
+                {isLargerThanBase && <Text>{slide.skillsLearned}</Text>}
               </HStack>
               <HStack
                 spacing={{ base: "2em", md: "2em", lg: "1.5em" }}

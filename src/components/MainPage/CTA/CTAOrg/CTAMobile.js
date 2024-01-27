@@ -49,6 +49,7 @@ function CTAMobile() {
                 h="3em"
                 w="15em"
                 fontSize="md"
+                isDisabled={true}
               >
                 Application
               </Button>
@@ -68,6 +69,7 @@ function CTAMobile() {
                 h="3em"
                 w="15em"
                 fontSize="md"
+                isDisabled={true}
               >
                 Interview Sign-up
               </Button>

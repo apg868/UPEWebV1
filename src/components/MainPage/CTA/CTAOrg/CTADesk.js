@@ -33,14 +33,13 @@ function CTADesk() {
           </Text>
           <HStack spacing={{ base: "3em", lg: "5em" }}>
             <a
-              href="https://docs.google.com/forms/d/1HjThY70Ucu2ne6P3kPqFxn31WBTdu9P12SGX5YFTTE8/closedform"
+              href="https://docs.google.com/forms/d/1w9mycVDGh34xgUNDUtqDSQNuiWilcuOG2jcIHEOvlxk/edit"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button
                 bg="white"
                 _hover={{ bg: "secondaryRed", textColor: "white" }}
-                isDisabled={true}
                 borderRadius="2em"
                 fontFamily="secondaryFont"
                 fontWeight="bold"
@@ -53,7 +52,7 @@ function CTADesk() {
               </Button>
             </a>
             <a
-              href="https://www.signupgenius.com/go/10C084EA5AA29A2F4CF8-upeinterview#"
+              href="https://docs.google.com/spreadsheets/d/17J-yzvR9H89IgeGQdsNZEttlHi1EMaz-aNtnXxL_a4E/edit#gid=0"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -64,7 +63,6 @@ function CTADesk() {
                 color="primaryRed"
                 fontSize={{ md: "2xl", lg: "3xl" }}
                 _hover={{ bg: "secondaryRed", textColor: "white" }}
-                isDisabled={true}
                 h="3em"
                 w={{ base: "12em", lg: "15em" }}
               >

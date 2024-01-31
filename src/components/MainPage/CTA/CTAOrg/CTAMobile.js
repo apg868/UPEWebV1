@@ -35,7 +35,7 @@ function CTAMobile() {
           </Text>
           <VStack spacing="2.5em">
             <a
-              href="https://docs.google.com/forms/d/1HjThY70Ucu2ne6P3kPqFxn31WBTdu9P12SGX5YFTTE8/closedform"
+              href="https://docs.google.com/forms/d/1w9mycVDGh34xgUNDUtqDSQNuiWilcuOG2jcIHEOvlxk/edit"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -49,13 +49,12 @@ function CTAMobile() {
                 h="3em"
                 w="15em"
                 fontSize="md"
-                isDisabled={true}
               >
                 Application
               </Button>
             </a>
             <a
-              href="https://www.signupgenius.com/go/10C084EA5AA29A2F4CF8-upeinterview#"
+              href="https://docs.google.com/spreadsheets/d/17J-yzvR9H89IgeGQdsNZEttlHi1EMaz-aNtnXxL_a4E/edit#gid=0"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -69,7 +68,6 @@ function CTAMobile() {
                 h="3em"
                 w="15em"
                 fontSize="md"
-                isDisabled={true}
               >
                 Interview Sign-up
               </Button>

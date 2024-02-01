@@ -41,9 +41,9 @@ const slidesData = [
   {
     image: Image3,
     name: "Marcus Izumi",
-    description:"Photo Journal Semantic Analyzer",
-    extendedDescription:"A photo journal application that is able to store photos, captions, and provide a semantic analysis of the provided photo and caption pair.",
-    technologies:"Swift, CreateML",
+    description: "Photo Journal Semantic Analyzer",
+    extendedDescription: "A photo journal application that is able to store photos, captions, and provide a semantic analysis of the provided photo and caption pair.",
+    technologies: "Swift, CreateML",
     skillsLearned: "I was able to revisit and refresh my programming capabilities in Swift, as well as practice the creation and use of ML models and semantic analysis models.",
     time: "15 hours"
   },
@@ -51,19 +51,19 @@ const slidesData = [
     image: Image4,
     name: "Jason Jiang",
     description: "Country-Language Query Program",
-    extendedDescription:"This is a Country Query program that displays all the given countries that speak a specific language. Search capabilities work both for language, and for any specific country, displaying their flag, capital, population, currency and region.",
-    technologies:"Javascript, HTML, Tailwind CSS",
+    extendedDescription: "This is a Country Query program that displays all the given countries that speak a specific language. Search capabilities work both for language, and for any specific country, displaying their flag, capital, population, currency and region.",
+    technologies: "Javascript, HTML, Tailwind CSS",
     skillsLearned: "I was able to explore this project using Javascript primarily, and practice my stylizing skills with Tailwind CSS.",
     time: "20 hours"
   },
 
   {
     image: Image5,
-    name: "Marcus Cowan",
+    name: "Sam Cowan",
     description: "BU Dining Hall Allergen Filter",
-    extendedDescription:"Filtering website for BU Dining Hall options, to assist those with dietary restrictions. Once criteria are provided, it will use an API to fetch the current dining options, and provide a list of options within the specified criteria.",
-    technologies:"Python, JS, Html, Css, Docker",
-    skillsLearned:"This project allowed me to deepen my knowledge in a variety of technologies, and further my ability to link apis to my app to accomplish my desired usage.",
+    extendedDescription: "Filtering website for BU Dining Hall options, to assist those with dietary restrictions. Once criteria are provided, it will use an API to fetch the current dining options, and provide a list of options within the specified criteria.",
+    technologies: "Python, JS, Html, Css, Docker",
+    skillsLearned: "This project allowed me to deepen my knowledge in a variety of technologies, and further my ability to link apis to my app to accomplish my desired usage.",
     time: "18 hours"
   }
 ];

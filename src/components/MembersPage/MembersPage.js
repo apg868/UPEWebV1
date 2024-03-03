@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import {
   HStack,
@@ -13,11 +13,14 @@ import {
 import IntroBanner from "./IntroBanner";
 import MemberFrame from "./MemberFrame";
 
-import students from "../../assets_folder/students.json";
+//import students from "../../assets_folder/students.json";
 
 function MembersPage() {
+
+  const [students, setStudents] = useState([]);
+
   const [funFactVisibilities, setFunFactVisibilities] = useState(
-    Object.fromEntries(students.map((x) => [x.id, false]))
+    Object.fromEntries(students.map((x) => [x._id, false]))
   );
 
   const toggleFunFact = (studentId) => {
@@ -25,6 +28,15 @@ function MembersPage() {
     clone[studentId] = !clone[studentId];
     setFunFactVisibilities(clone);
   };
+
+  useEffect(() => {
+    const BACKEND_URL = "http://localhost:5555/students";
+    fetch(BACKEND_URL)
+      .then(response => response.json())
+      .then(response => {
+        setStudents(response.data);
+      });
+  }, [])
 
   const breakpoint = useBreakpointValue({
     base: "base",
@@ -75,16 +87,16 @@ function MembersPage() {
         <HStack spacing="4rem">
           {row.map((member) => {
             return (
-              <VStack key={member.id}>
+              <VStack key={member._id}>
                 <MemberFrame student={member} />
                 <Button
                   isDisabled={!member.funfact}
-                  onClick={() => toggleFunFact(member.id)}
+                  onClick={() => toggleFunFact(member._id)}
                   colorScheme="teal"
                 >
                   About Me
                 </Button>
-                <Collapse in={funFactVisibilities[member.id]}>
+                <Collapse in={funFactVisibilities[member._id]}>
                   <Box p={4} mt={4} borderWidth="1px" borderRadius="md">
                     <Text fontFamily="bannerFont" fontSize="md">
                       {` ${member.funfact} `}

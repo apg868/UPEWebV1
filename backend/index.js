@@ -8,7 +8,7 @@ const app = express();
 dotenv.config();
 
 const dbURL = process.env.dbURL;
-const port = process.env.port || 5555;
+const port = process.env.PORT || 5555;
 
 app.use(express.json());
 

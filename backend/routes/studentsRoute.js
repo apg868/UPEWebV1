@@ -24,8 +24,8 @@ router.post("/", async (req, res) => {
         if (req.body.funfact) {
             newStudent.funfact = req.body.funfact;
         }
-        if (req.body.imagePath) {
-            newStudent.imagePath = req.body.imagePath;
+        if (req.body.image_path) {
+            newStudent.image_path = req.body.image_path;
         }
         const student = await Student.create(newStudent);
 
@@ -90,8 +90,8 @@ router.put("/:id", async (req, res) => {
         if (req.body.funfact) {
             updatedStudent.funfact = req.body.funfact;
         }
-        if (req.body.imagePath) {
-            updatedStudent.imagePath = req.body.imagePath;
+        if (req.body.image_path) {
+            updatedStudent.image_path = req.body.image_path;
         }
 
         const result = await Student.findByIdAndUpdate(id, updatedStudent);

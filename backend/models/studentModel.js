@@ -22,7 +22,7 @@ const studentSchema = mongoose.Schema(
             type: String,
             required: false
         },
-        imagePath: {
+        image_path: {
             type: String,
             required: false
         }

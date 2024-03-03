@@ -28,7 +28,7 @@ This repository hosts UPE@BU's current GitHub pages website. We are using [Trell
   * major - String, required
   * year - Number, required
   * funfact - String, not required
-  * imagePath - String, not required
+  * image_path - String, not required
 
 ### Routes
 * /students

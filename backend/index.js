@@ -9,12 +9,11 @@ dotenv.config();
 
 const dbURL = process.env.dbURL;
 const port = process.env.PORT || 5555;
-const allowedOrigin = process.env.ORIGIN || "http://localhost:3000";
 
 app.use(express.json());
 
 app.use(cors({
-    origin: allowedOrigin
+    methods: "GET"
 }));
 
 app.use("/students", studentsRoute);

@@ -30,7 +30,7 @@ function MembersPage() {
   };
 
   useEffect(() => {
-    const BACKEND_URL = "http://localhost:5555/students";
+    const BACKEND_URL = "https://upewebv1.onrender.com/students";
     fetch(BACKEND_URL)
       .then(response => response.json())
       .then(response => {

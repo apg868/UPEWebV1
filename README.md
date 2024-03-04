@@ -44,6 +44,13 @@ This repository hosts UPE@BU's current GitHub pages website. We are using [Trell
 * To work, needs port and dbURL env variables
 * `npm start` or `npm run dev` for auto reloading on save
 
+### Deployment
+* Deployed on [render.com] using its free tier
+* The first backend call will take considerably longer due to nature of free tier
+* To test connection to backend deployment, the frontend in this branch calls the backend to display member info
+* See src/components/MemberPage.js to see how frontend calls backend and displays data
+* Run frontend with `npm start` in main repository directory
+
 ### Executing program
 * Use [Gitname's guide on deploying React apps to GitHub Pages](https://github.com/gitname/react-gh-pages).
 

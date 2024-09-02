@@ -3,7 +3,7 @@ import { Flex, Text, Image, VStack } from "@chakra-ui/react";
 import placeholderAvatar from "./../../assets_folder/user.svg";
 
 function MemberFrame({ student }) {
-  const { name, title, major, year, image_path } = student;
+  const { fullName, rank, major, classYear, image_path } = student;
 
   let avatar;
   let placeholder = false;
@@ -39,16 +39,16 @@ function MemberFrame({ student }) {
         }
         <VStack spacing="0.1rem" marginLeft="0.5rem" marginRight="0.5rem">
           <Text fontFamily="bannerFont" fontSize="md">
-            {` ${name} `}
+            {` ${fullName} `}
           </Text>
           <Text fontFamily="bannerFont" fontSize="md">
-            {` ${title} `}
+            {` ${rank} `}
           </Text>
           <Text fontFamily="bannerFont" fontSize="sm">
             {` ${major} `}
           </Text>
           <Text fontFamily="bannerFont" fontSize="md">
-            {` Class of ${year} `}
+            {` Class of ${classYear} `}
           </Text>
         </VStack>
       </VStack>

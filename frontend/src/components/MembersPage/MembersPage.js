@@ -67,8 +67,8 @@ function MembersPage() {
 
   console.log(ROW_LENGTH);
 
-  let officers = students.filter((x) => x.title !== "Member");
-  let plebs = students.filter((x) => x.title == "Member");
+  let officers = getOfficers(students);
+  let plebs = students.filter((x) => x.rank == "Member");
 
   function matrixizeMemberList(members, rowLength) {
     let memberRows = [];
@@ -120,4 +120,40 @@ function MembersPage() {
     </VStack>
   );
 }
+
+function getOfficers(students)
+{
+  let president = whereRank(students, "President");
+  let vicePresident = whereRank(students, "Vice President");
+  let secretary = whereRank(students, "Secretary");
+  let treasurer = whereRank(students, "Treasurer");
+  let recruitment = whereRank(students, "Recruitment");
+  let operations = whereRank(students, "Operations");
+  let internal = whereRank(students, "Internal Development");
+  let marketing = whereRank(students, "Marketing");
+
+  let res = [];
+  if (president) res.push(president);
+  if (vicePresident) res.push(vicePresident);
+  if (secretary) res.push(secretary);
+  if (treasurer) res.push(treasurer);
+  if (recruitment) res.push(recruitment);
+  if (operations) res.push(operations);
+  if (internal) res.push(internal);
+  if (marketing) res.push(marketing);
+
+  return res;
+}
+
+function whereRank(students, rank) {
+  console.log(rank);
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].rank === rank) {
+      return students[i];
+    }
+  }
+
+  return null;
+}
+
 export default MembersPage;

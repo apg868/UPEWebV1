@@ -13,8 +13,6 @@ import {
 import IntroBanner from "./IntroBanner";
 import MemberFrame from "./MemberFrame";
 
-//import students from "../../assets_folder/students.json";
-
 function MembersPage() {
 
   const [students, setStudents] = useState([]);
@@ -30,7 +28,7 @@ function MembersPage() {
   };
 
   useEffect(() => {
-    const BACKEND_URL = "http://localhost:8080/students/";
+    const BACKEND_URL = "https://upe.sainayunipati.com/students/";
     fetch(BACKEND_URL)
       .then(response => response.json())
       .then(response => {
@@ -94,7 +92,7 @@ function MembersPage() {
                   onClick={() => toggleFunFact(member._id)}
                   colorScheme="teal"
                 >
-                  About Me
+                  Company
                 </Button>
                 <Collapse in={funFactVisibilities[member._id]}>
                   <Box p={4} mt={4} borderWidth="1px" borderRadius="md">

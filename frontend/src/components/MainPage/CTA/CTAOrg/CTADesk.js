@@ -33,7 +33,7 @@ function CTADesk() {
           </Text>
           <HStack spacing={{ base: "3em", lg: "5em" }}>
             <a
-              href="https://docs.google.com/forms/d/1w9mycVDGh34xgUNDUtqDSQNuiWilcuOG2jcIHEOvlxk/edit"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdBdwK-C3rWQqtKba-RdmxZLG4dLfsXPirJa1NEkIC1bp4aSw/viewform"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -48,25 +48,7 @@ function CTADesk() {
                 w={{ base: "12em", lg: "15em" }}
                 fontSize={{ md: "2xl", lg: "3xl" }}
               >
-                Application
-              </Button>
-            </a>
-            <a
-              href="https://docs.google.com/spreadsheets/d/17J-yzvR9H89IgeGQdsNZEttlHi1EMaz-aNtnXxL_a4E/edit#gid=0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                bg="white"
-                borderRadius="2em"
-                fontFamily="secondaryFont"
-                color="primaryRed"
-                fontSize={{ md: "2xl", lg: "3xl" }}
-                _hover={{ bg: "secondaryRed", textColor: "white" }}
-                h="3em"
-                w={{ base: "12em", lg: "15em" }}
-              >
-                Interview Sign-up
+                Join our Mailing List
               </Button>
             </a>
           </HStack>

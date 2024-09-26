@@ -35,7 +35,7 @@ function CTAMobile() {
           </Text>
           <VStack spacing="2.5em">
             <a
-              href="https://docs.google.com/forms/d/1w9mycVDGh34xgUNDUtqDSQNuiWilcuOG2jcIHEOvlxk/edit"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdBdwK-C3rWQqtKba-RdmxZLG4dLfsXPirJa1NEkIC1bp4aSw/viewform"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -50,34 +50,10 @@ function CTAMobile() {
                 w="15em"
                 fontSize="md"
               >
-                Application
-              </Button>
-            </a>
-            <a
-              href="https://docs.google.com/spreadsheets/d/17J-yzvR9H89IgeGQdsNZEttlHi1EMaz-aNtnXxL_a4E/edit#gid=0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                bg="white"
-                _hover={{ bg: "secondaryRed", textColor: "white" }}
-                borderRadius="2em"
-                fontFamily="secondaryFont"
-                fontWeight="bold"
-                color="primaryRed"
-                h="3em"
-                w="15em"
-                fontSize="md"
-              >
-                Interview Sign-up
+                Join our Mailing List
               </Button>
             </a>
           </VStack>
-          <a
-            href="https://www.signupgenius.com/go/10C084EA5AA29A2F4CF8-upeinterview#"
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a>
           <Text
             color="white"
             fontSize="xl"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import {
   HStack,
@@ -13,11 +13,12 @@ import {
 import IntroBanner from "./IntroBanner";
 import MemberFrame from "./MemberFrame";
 
-import students from "../../assets_folder/students.json";
-
 function MembersPage() {
+
+  const [students, setStudents] = useState([]);
+
   const [funFactVisibilities, setFunFactVisibilities] = useState(
-    Object.fromEntries(students.map((x) => [x.id, false]))
+    Object.fromEntries(students.map((x) => [x._id, false]))
   );
 
   const toggleFunFact = (studentId) => {
@@ -25,6 +26,15 @@ function MembersPage() {
     clone[studentId] = !clone[studentId];
     setFunFactVisibilities(clone);
   };
+
+  useEffect(() => {
+    const BACKEND_URL = "https://upe.sainayunipati.com/students/";
+    fetch(BACKEND_URL)
+      .then(response => response.json())
+      .then(response => {
+        setStudents(response.data);
+      });
+  }, [])
 
   const breakpoint = useBreakpointValue({
     base: "base",
@@ -55,8 +65,8 @@ function MembersPage() {
 
   console.log(ROW_LENGTH);
 
-  let officers = students.filter((x) => x.title !== "Member");
-  let plebs = students.filter((x) => x.title == "Member");
+  let officers = getOfficers(students);
+  let plebs = students.filter((x) => x.rank == "Member");
 
   function matrixizeMemberList(members, rowLength) {
     let memberRows = [];
@@ -75,19 +85,19 @@ function MembersPage() {
         <HStack spacing="4rem">
           {row.map((member) => {
             return (
-              <VStack key={member.id}>
+              <VStack key={member._id}>
                 <MemberFrame student={member} />
                 <Button
-                  isDisabled={!member.funfact}
-                  onClick={() => toggleFunFact(member.id)}
+                  isDisabled={!member.company}
+                  onClick={() => toggleFunFact(member._id)}
                   colorScheme="teal"
                 >
-                  About Me
+                  Company
                 </Button>
-                <Collapse in={funFactVisibilities[member.id]}>
+                <Collapse in={funFactVisibilities[member._id]}>
                   <Box p={4} mt={4} borderWidth="1px" borderRadius="md">
                     <Text fontFamily="bannerFont" fontSize="md">
-                      {` ${member.funfact} `}
+                      {` ${member.company} `}
                     </Text>
                   </Box>
                 </Collapse>
@@ -108,4 +118,40 @@ function MembersPage() {
     </VStack>
   );
 }
+
+function getOfficers(students)
+{
+  let president = whereRank(students, "President");
+  let vicePresident = whereRank(students, "Vice President");
+  let secretary = whereRank(students, "Secretary");
+  let treasurer = whereRank(students, "Treasurer");
+  let recruitment = whereRank(students, "Recruitment");
+  let operations = whereRank(students, "Operations");
+  let internal = whereRank(students, "Internal Development");
+  let marketing = whereRank(students, "Marketing");
+
+  let res = [];
+  if (president) res.push(president);
+  if (vicePresident) res.push(vicePresident);
+  if (secretary) res.push(secretary);
+  if (treasurer) res.push(treasurer);
+  if (recruitment) res.push(recruitment);
+  if (operations) res.push(operations);
+  if (internal) res.push(internal);
+  if (marketing) res.push(marketing);
+
+  return res;
+}
+
+function whereRank(students, rank) {
+  console.log(rank);
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].rank === rank) {
+      return students[i];
+    }
+  }
+
+  return null;
+}
+
 export default MembersPage;

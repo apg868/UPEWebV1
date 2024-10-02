@@ -8,11 +8,12 @@ function CTADesk() {
       right="0"
       bottom="0"
       left="0"
+      mb="4rem"
       justifyContent="center"
       alignItems="center"
     >
       <Flex
-        bg="primaryRed"
+        bg="#880708"
         width="95%"
         height={{ md: "25em", lg: "30em" }}
         marginTop="5em"
@@ -39,11 +40,11 @@ function CTADesk() {
             >
               <Button
                 bg="white"
-                _hover={{ bg: "secondaryRed", textColor: "white" }}
+                _hover={{ bg: "#bd4142", textColor: "white" }}
                 borderRadius="2em"
                 fontFamily="secondaryFont"
                 fontWeight="bold"
-                color="primaryRed"
+                color="#880708"
                 h="3em"
                 w={{ base: "12em", lg: "15em" }}
                 fontSize={{ md: "2xl", lg: "3xl" }}

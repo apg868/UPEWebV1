@@ -39,13 +39,14 @@ function CTAMobile() {
               target="_blank"
               rel="noopener noreferrer"
             >
+              
               <Button
                 bg="white"
-                _hover={{ bg: "secondaryRed", textColor: "white" }}
+                _hover={{ bg: "bd4142", textColor: "white" }}
                 borderRadius="2em"
                 fontFamily="secondaryFont"
                 fontWeight="bold"
-                color="primaryRed"
+                color="#880708"
                 h="3em"
                 w="15em"
                 fontSize="md"

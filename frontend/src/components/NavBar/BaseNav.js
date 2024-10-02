@@ -15,67 +15,88 @@ function BaseNav() {
       top={0}
       left={0}
       right={0}
-      bg={{ md: "primaryGray" }}
+      bg={{ md: "#ece7dc" }}
       w="100%"
-      h="9vh"
+      h="8vh"
       zIndex={1}
-      borderBottom="2px"
-      borderBottomColor="primaryRed"
+      justify="center" // Center the entire HStack
+      align="center" // Center items vertically
+
+      // borderBottom="2px"
+      // borderBottomColor="primaryRed"
     >
-      <HStack spacing={{ md: "3em", lg: "15em" }}>
-        <Image
+      <HStack 
+       spacing={{ md: "2em", lg: "4em" }} // Adjust spacing here
+       paddingLeft={{ md: "2em", lg: "2em" }} // Adjust padding here
+      >
+        {/* <Image
           src={logoRED}
-          boxSize="9vh"
+          boxSize="8vh"
+          borderRadius="4em"
+          style={{ cursor: "pointer" }}
+          onClick={handleLogoClick}
+        /> */}
+        <HStack
+          spacing={{ md: "3em", lg: "5em" }}
+          paddingLeft={{ md: "4em", lg: "4em" }}
+          // justify="flex-start"
+        >
+          <Image
+          src={logoRED}
+          boxSize="8vh"
           borderRadius="4em"
           style={{ cursor: "pointer" }}
           onClick={handleLogoClick}
         />
-        <HStack
-          spacing={{ md: "3em", lg: "5em" }}
-          paddingLeft={{ md: "3em", lg: "4em" }}
-        >
           <Link to="/">
             <Text
+              textAlign="left"
+              fontWeight="bold"
               fontFamily="secondaryFont"
-              fontWeight="light"
-              fontSize={{ md: "xl", lg: "2xl" }}
               pt={1}
-              _hover={{ color: "secondaryRed" }}
+              color = "#880708"
+              _hover={{ color: "black" }}
+              fontSize={{ md: "xl", lg: "xl" }}
             >
-              Home
+              HOME
             </Text>
           </Link>
+          
           <Link to="/members">
             <Text
+              textAlign="left"
+              fontWeight="bold"
               fontFamily="secondaryFont"
-              fontWeight="light"
-              fontSize={{ md: "xl", lg: "2xl" }}
+              fontSize={{ md: "xl", lg: "xl" }}
               pt={1}
-              _hover={{ color: "secondaryRed" }}
+              color = "#880708"
+              _hover={{ color: "black" }}
             >
-              Members
+              MEMBERS
             </Text>
           </Link>
           <Link to="/intern-projects">
             <Text
+              fontWeight="bold"
               fontFamily="secondaryFont"
-              fontWeight="light"
-              fontSize={{ md: "xl", lg: "2xl" }}
+              fontSize={{ md: "xl", lg: "xl" }}
               pt={1}
-              _hover={{ color: "secondaryRed" }}
+              color = "#880708"
+              _hover={{ color: "black" }}
             >
-              Highlights
+              HIGHLIGHTS
             </Text>
           </Link>
           <Link to="/about-us">
             <Text
+              fontWeight="bold"
               fontFamily="secondaryFont"
-              fontWeight="light"
-              fontSize={{ md: "xl", lg: "2xl" }}
+              fontSize={{ md: "xl", lg: "xl" }}
               pt={1}
-              _hover={{ color: "secondaryRed" }}
+              color = "#880708"
+              _hover={{ color: "black" }}
             >
-              About
+              ABOUT
             </Text>
           </Link>
           <Link
@@ -83,13 +104,14 @@ function BaseNav() {
             target="_blank"
           >
             <Text
+             fontWeight="bold"
               fontFamily="secondaryFont"
-              fontWeight="light"
-              fontSize={{ md: "xl", lg: "2xl" }}
+              fontSize={{ md: "xl", lg: "xl" }}
               pt={1}
-              _hover={{ color: "secondaryRed" }}
+              color = "#880708"
+              _hover={{ color: "black" }}
             >
-              Calendar
+              CALENDAR
             </Text>
           </Link>
         </HStack>

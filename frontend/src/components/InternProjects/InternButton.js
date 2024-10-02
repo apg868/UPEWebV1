@@ -17,7 +17,7 @@ function InternBox() {
             >
                 <Text fontSize={{"base":"2xl","md":"3xl","lg":"3xl"}} fontFamily="bannerFont"
                 textAlign="center"
-                wordWrap="break-word">See Some of Our Highlighted Projects Below</Text>
+                wordWrap="break-word">Explore Our Featured Projects</Text>
             </Flex>
         </Flex>
     );

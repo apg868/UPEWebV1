@@ -98,12 +98,12 @@ function InternProjects() {
   return (
     <VStack spacing={{ base: "1rem", md: "3rem" }} paddingTop="2em">
       <VStack spacing={{ base: "0.5rem", md: "1.5rem" }}>
-        <IntroBanner content="See Some of Our Highlighted Projects Below" />
+        <IntroBanner content="Explore Our Featured Projects" />
         <CaptionCarousel slides={slidesData} />
       </VStack>
 
       <VStack spacing={{ base: "0.5rem", md: "1.5rem" }}>
-        <IntroBanner content="See the success of UPE Members in Industry!" />
+        <IntroBanner content="Career Success of UPE Members" />
         <InternshipCarousel slides={internsData} />
       </VStack>
     </VStack>

@@ -28,8 +28,9 @@ function CardFrame2(props) {
   const textWidth = "100%"; // Set a fixed width for the text content
 
   return (
+    
     <Box
-      bg="primaryGray"
+      bg="#f4e7d0"
       width={cardWidth} // Set a fixed width for the entire card
       height={boxHeight}
       borderRadius="1em"
@@ -44,6 +45,7 @@ function CardFrame2(props) {
     >
       <VStack height="100%" alignItems="center" justifyContent="center">
         {!isFlipped && (
+          
           <Box
             width={textWidth} // Set a fixed width for unflipped content
             paddingLeft={textPadding}
@@ -74,14 +76,14 @@ function CardFrame2(props) {
             transform="rotateY(180deg)"
           >
             <Text
-              fontFamily="primaryFont"
+              fontFamily="secondaryFont"
               fontWeight="semibold"
               fontSize="lg"
             >
               {titleInDescription}
             </Text>
             <Text
-              fontFamily="primaryFont"
+              fontFamily="secondaryFont"
               fontWeight="normal"
               fontSize="lg"
             >

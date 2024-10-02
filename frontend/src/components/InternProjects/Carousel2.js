@@ -42,17 +42,17 @@ function InternshipCarousel({ slides }) {
                     position="absolute"
                     bottom={{"base":"2%","md":"4%", "lg":"6%"}}
                     left={{"base":"2%","md":"3%","lg":"4%"}}
-                    bg="rgba(0,0,0,0.9)"
+                    bg="#f4e7d0"
                     p={{"base":"0.5","md":"1","lg":"2"}}
                     w={{"base":"4rem","md":"5rem","large":"10rem"}}
-                    border="2px solid"
-                    borderColor="white"
+                    border="0.1px solid"
+                    // borderColor="white"
                     alignItems="left"
                 >
-                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="primaryFont" fontWeight="medium" color="white">{currentName}</Text>
-                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="primaryFont" fontWeight="medium" color="white">{currentMajor}</Text>
-                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="secondaryFont" color="white">{currentDescription}</Text>
-                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="secondaryFont" color="white">{currentCompany}</Text>
+                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="secondaryFont" fontWeight="medium" color="##523a2a">{currentName}</Text>
+                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="secondaryFont" fontWeight="medium" color="##523a2a">{currentMajor}</Text>
+                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="secondaryFont" color="##523a2a">{currentDescription}</Text>
+                    <Text fontSize={{"base":"xs","md":"sm","lg":"lg"}} fontFamily="secondaryFont" color="##523a2a">{currentCompany}</Text>
                 </VStack>
 
                 <Button

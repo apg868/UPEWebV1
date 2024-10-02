@@ -4,7 +4,7 @@ import {
   HStack,
   VStack,
   Text,
-  Button,
+  // Button,
   Collapse,
   Box,
   useBreakpointValue,
@@ -87,13 +87,13 @@ function MembersPage() {
             return (
               <VStack key={member._id}>
                 <MemberFrame student={member} />
-                <Button
+                {/* <Button
                   isDisabled={!member.company}
                   onClick={() => toggleFunFact(member._id)}
                   colorScheme="teal"
                 >
                   Company
-                </Button>
+                </Button> */}
                 <Collapse in={funFactVisibilities[member._id]}>
                   <Box p={4} mt={4} borderWidth="1px" borderRadius="md">
                     <Text fontFamily="bannerFont" fontSize="md">
@@ -111,7 +111,7 @@ function MembersPage() {
 
   return (
     <VStack spacing="2rem" paddingTop="3rem">
-      <IntroBanner content={"E-Board"} />
+      <IntroBanner content={"Executive Board Members"} />
       {getGridJsx(officers)}
       <IntroBanner content={"Current Members"} />
       {getGridJsx(plebs)}

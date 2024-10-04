@@ -2,14 +2,12 @@ import React from "react";
 import {
   VStack,
   HStack,
-  Image,
   Text,
   Link as ChakraLink,
   Icon,
   Stack,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import logoWHITE from "./../assets_folder/logoWHITE.png";
 import {
   FaInstagram,
   FaFacebook,
@@ -35,85 +33,18 @@ function Footer() {
       // mx={{ base: "2em", md: "4em" }}             
       alignItems={["center", "center", "flex-start"]} // Center align items only in mobile state
     >
-      {/* get rid of image */}
-      {/* <Image
-        src={logoWHITE}
-        width={["100px", "150px", "200px"]}
-        height={["80px", "120px", "160px"]}
-        opacity="60%"
-        borderRadius={10}
-      /> */}
       // Navigation Links
        <HStack spacing={9} align="center">
-       <VStack spacing={2} align="flex-start">
-        <Text
-          color="black"
-          fontFamily="secondaryFont"
-          fontWeight="bold"
-          fontSize="md"
-        >
-         {/* Navigation */}
-        </Text>
-        <Text
-          fontFamily="secondaryFont"
-          fontWeight="medium"
-          fontSize="md"
-          color="gray"
-          _hover={{ textDecoration: "underline", textDecorationColor: "grey" }}
-        >
-          {/* <Link to="/">Home</Link> */}
-        </Text>
-        <Text
-          fontFamily="secondaryFont"
-          fontWeight="medium"
-          fontSize="md"
-          color="gray"
-          _hover={{ textDecoration: "underline", textDecorationColor: "grey" }}
-        >
-          {/* <Link to="/members">Members</Link> */}
-        </Text>
-        <Text
-          fontFamily="secondaryFont"
-          fontWeight="medium"
-          fontSize="md"
-          color="gray"
-          _hover={{ textDecoration: "underline", textDecorationColor: "grey" }}
-        >
-          {/* <Link to="/intern-projects">Highlights</Link> */}
-        </Text>
-        <Text
-          fontFamily="primaryFont"
-          fontWeight="medium"
-          fontSize="md"
-          color="gray"
-          _hover={{ textDecoration: "underline", textDecorationColor: "grey" }}
-        >
-          {/* <Link to="/about-us">About Us</Link> */}
-        </Text>
-        <Text
-          fontFamily="primaryFont"
-          fontWeight="medium"
-          fontSize="md"
-          color="gray"
-          _hover={{ textDecoration: "underline", textDecorationColor: "grey" }}
-        >
-          <Link to="https://github.com/sai-nayunipati/upe-bu-cs-major-guide">
-            {/* UPE@BU C.S. Major Guide */}
-          </Link>
-        </Text>
-      </VStack>
       <VStack spacing={2} align={["center", "center", "flex-start"]}>
         <Text
           color="black"
           fontFamily="secondaryFont"
           fontWeight="middle"
           fontSize="30px"
+          textAlign="center"
         >
           Connect with Us
-        </Text>
-        <div style={{ border: '1px solid #ccc', margin: '0.5em 0' }}></div>
-
-
+        </Text>      
         {/* instagram icon - attach link */}
     
         <HStack spacing={4} align="center">

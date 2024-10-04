@@ -1,7 +1,5 @@
 import { Box, Text } from "@chakra-ui/react"; 
 import Banner from "./BannerTop/Banner";
-import Banner2 from "./BannerTop/Banner2";
-import BannerTransition from "./BannerTransition/BannerTransition";
 import Cards from "./CardSect/Cards";
 import CTA from "./CTA/CTA";
 import bannerImage from '../../assets_folder/banner3.jpg';
@@ -14,19 +12,19 @@ function MainPage() {
             <Box 
                 
                 position="relative" 
-                height={{ base: "150px", md: "200px" }}
+                height={{ base: "-10px", md: "200px", lg: "250px" }} // Added lg height
                 textAlign="center"
                 >
                 <Banner bannerImage={bannerImage} logo={true} />
                 
                 <Text 
-                    marginTop="-60px" 
-                    fontSize="7xl" 
+                    mt={{ base: "-30px", md: "-45px", lg: "-60px" }}
+                    fontSize={{ base: "6xl", md: "6xl", lg: "7xl" }}
                     fontWeight="bold" 
                     color="#ece7dc"
                     textShadow="2px 2px 4px rgba(0, 0, 0, 0.3)"
-                    transform="translateY(-275%)"
-                >
+                    transform={{ base: "translateY(-300%)", md: "translateY(-400%)", lg: "translateY(-275%)" }}
+                    >
                     <span style={{ color: '#ece7dc'}}>BU </span>
                     <span style={{ color: '#880708'}}>U</span>
                     <span style={{ color: '#ece7dc'}}>PSILON </span>
@@ -37,18 +35,24 @@ function MainPage() {
                 </Text>
 
                 <Text 
-                    fontSize="3xl" 
+                    fontSize={{ base: "2xl", md: "2.5xl", lg: "3xl" }}
                     fontWeight="bold" 
                     color="#ece7dc"
                     textShadow="2px 2px 4px rgba(0, 0, 0, 0.3)"
-                    transform="translateY(-690%)"
-                >
+                    transform={{ base: "translateY(-1300%)", md: "translateY(-750%)", lg: "translateY(-690%)" }}
+                    >
                     Your Gateway to CS Excellence
                 </Text>
             </Box>
        
-            <Box marginTop="100px" marginBottom="-20rem"> {/* Additional space can be adjusted here */}
-                <Cards cardH="30em" />
+            <Box
+             marginTop={{ base: "-100px", md: "205px", lg: "100px" }} 
+             marginBottom={{ base: "-10rem", md: "-20rem", lg: "-20rem" }}
+            > 
+                <Cards
+                cardH={{ base: "20em", md: "25em", lg: "30em" }}
+
+                />
             </Box>        
             <CTA />
             </Box>

@@ -4,7 +4,7 @@ import {
   HStack,
   VStack,
   Text,
-  Button,
+  // Button,
   Collapse,
   Box,
   useBreakpointValue,
@@ -28,7 +28,8 @@ function MembersPage() {
   };
 
   useEffect(() => {
-    const BACKEND_URL = "https://upe.sainayunipati.com/students/";
+    const BACKEND_URL = "http://localhost:8080/students/";
+  
     fetch(BACKEND_URL)
       .then(response => response.json())
       .then(response => {
@@ -82,24 +83,12 @@ function MembersPage() {
 
     return membersMatrix.map((row) => {
       return (
-        <HStack spacing="4rem">
+        <HStack spacing="3rem">
           {row.map((member) => {
             return (
-              <VStack key={member._id}>
+              <VStack    key={member._id}>
                 <MemberFrame student={member} />
-                <Button
-                  isDisabled={!member.company}
-                  onClick={() => toggleFunFact(member._id)}
-                  colorScheme="teal"
-                >
-                  Company
-                </Button>
                 <Collapse in={funFactVisibilities[member._id]}>
-                  <Box p={4} mt={4} borderWidth="1px" borderRadius="md">
-                    <Text fontFamily="bannerFont" fontSize="md">
-                      {` ${member.company} `}
-                    </Text>
-                  </Box>
                 </Collapse>
               </VStack>
             );
@@ -110,8 +99,8 @@ function MembersPage() {
   }
 
   return (
-    <VStack spacing="2rem" paddingTop="3rem">
-      <IntroBanner content={"E-Board"} />
+    <VStack spacing="2rem" paddingTop="2rem" paddingBottom="3em">
+      <IntroBanner content={"Executive Board Members"} />
       {getGridJsx(officers)}
       <IntroBanner content={"Current Members"} />
       {getGridJsx(plebs)}

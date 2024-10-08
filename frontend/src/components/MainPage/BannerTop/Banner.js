@@ -7,59 +7,25 @@ function Banner(props) {
     return (
         <Flex
             bgImage={props.bannerImage}
-            w={{base: "100vw"}}
-            h={{ base: "60vh", md: "40vh", lg: "50vh"}}
+            w="100%" // Set width to 100% to cover the entire width of the parent
+            h={{ base: "80vh", md: "70vh", lg: "60vh" }}
             alignItems="flex-start"
             justifyContent="flex-start"
-            padding="2em"
+            p={{ base: "1em", md: "1.5em", lg: "2em" }}
             backgroundRepeat="no-repeat"
-            paddingLeft={{ "base": "1em", "md": "2em", "lg": "3em" }}
-            paddingTop={{ "base": "2em", "md": "2em", "lg": "3em" }}
-            // Add background position and size properties to the image
+            paddingLeft={{ base: "1em", md: "2em", lg: "3em" }}
+            paddingTop={{ base: "2em", md: "2em", lg: "3em" }}
+            pb={{ base: "1em", md: "2em", lg: "3em" }}
             backgroundPosition="center" // Center the image
             backgroundSize="cover" // Crop the sides while maintaining aspect ratio
-            borderBottom="2px solid red"
         >
+            {/* Content goes here */}
             <Box
-                background="rgb(218,218,218,1)"
-                borderRadius="1em"
-                p={{ "base": "0.5em", "md": "0.5em", "lg": "0.5em" }}
+                background="#fbf5e9"
             >
                 {props.logo &&
                     <VStack spacing="0em">
-                        <HStack spacing="0em">
-                            <Text
-                                fontFamily={"bannerFont"}
-                                fontWeight="normal"
-                                color="secondaryRed"
-                                fontSize={{ "base": "md", "md": "lg", "lg": "2xl" }}
-                            > Upsilon &nbsp;
-                            </Text>
-                            <Text
-                                fontFamily={"bannerFont"}
-                                fontWeight="normal"
-                                color="white"
-                                fontSize={{ "base": "md", "md": "lg", "lg": "2xl" }}
-                            > Pi &nbsp;
-                            </Text>
-                            <Text
-                                fontFamily={"bannerFont"}
-                                fontWeight="normal"
-                                color="secondaryRed"
-                                fontSize={{ "base": "md", "md": "lg", "lg": "2xl" }}
-                            > Epsilon
-                            </Text>
-                            Pi &nbsp; Epsilon
-                        </HStack>
-                        <Text
-                            fontFamily={"bannerFont"}
-                            fontWeight="light"
-                            fontSize={{ "base": "2xs", "md": "xs", "lg": "md" }}>  Boston University Chapter
-                        </Text>
-                        <HStack spacing={{ "base": "4em", "md": "5em", "lg": "7em" }}>
-                            <Text fontFamily={"bannerFont"} fontWeight="bold" fontSize={{ "base": "md", "md": "lg", "lg": "2xl" }}>Υ</Text>
-                            <Text fontFamily={"bannerFont"} fontWeight="bold" fontSize={{ "base": "md", "md": "lg", "lg": "2xl" }}>Π</Text>
-                            <Text fontFamily={"bannerFont"} fontWeight="bold" fontSize={{ "base": "md", "md": "lg", "lg": "2xl" }}>Ε</Text>
+                        <HStack spacing="2em">
                         </HStack>
                     </VStack>
                 }

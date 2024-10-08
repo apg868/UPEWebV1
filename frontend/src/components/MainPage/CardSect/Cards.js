@@ -7,8 +7,8 @@ function Cards() {
 
   return (
     <>
-      {breakpoint === "base" && <CardDesk />}
-      {breakpoint !== "base" && <CardDesk />}
+    <CardDesk />
+      
     </>
   );
 }

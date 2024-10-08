@@ -21,42 +21,32 @@ function BaseNav() {
       zIndex={1}
       justify="center" // Center the entire HStack
       align="center" // Center items vertically
-
-      // borderBottom="2px"
-      // borderBottomColor="primaryRed"
     >
       <HStack 
-       spacing={{ md: "2em", lg: "4em" }} // Adjust spacing here
-       paddingLeft={{ md: "2em", lg: "2em" }} // Adjust padding here
+        spacing={{ base: 4, md: 6, lg: 8 }} // Responsive spacing for better alignment
+        paddingX={{ base: "2em", md: "4em", lg: "4em" }} // Responsive padding
+        justify="center" // Center items within the HStack
       >
-        {/* <Image
-          src={logoRED}
-          boxSize="8vh"
-          borderRadius="4em"
-          style={{ cursor: "pointer" }}
-          onClick={handleLogoClick}
-        /> */}
-        <HStack
-          spacing={{ md: "3em", lg: "5em" }}
-          paddingLeft={{ md: "4em", lg: "4em" }}
-          // justify="flex-start"
-        >
-          <Image
+        <Image
           src={logoRED}
           boxSize="8vh"
           borderRadius="4em"
           style={{ cursor: "pointer" }}
           onClick={handleLogoClick}
         />
+        <HStack
+          spacing={{ base: 5, md: 8, lg: 10 }} // Responsive spacing for links
+          justify="center" // Center links within the HStack
+        >
           <Link to="/">
             <Text
-              textAlign="left"
+              textAlign="center"
               fontWeight="bold"
               fontFamily="secondaryFont"
               pt={1}
-              color = "#880708"
+              color="#880708"
               _hover={{ color: "black" }}
-              fontSize={{ md: "xl", lg: "xl" }}
+              fontSize={{ base: "md", md: "xl", lg: "xl" }} // Responsive font size
             >
               HOME
             </Text>
@@ -64,51 +54,57 @@ function BaseNav() {
           
           <Link to="/members">
             <Text
-              textAlign="left"
+              textAlign="center"
               fontWeight="bold"
               fontFamily="secondaryFont"
-              fontSize={{ md: "xl", lg: "xl" }}
+              fontSize={{ base: "md", md: "xl", lg: "xl" }} // Responsive font size
               pt={1}
-              color = "#880708"
+              color="#880708"
               _hover={{ color: "black" }}
             >
               MEMBERS
             </Text>
           </Link>
+          
           <Link to="/intern-projects">
             <Text
+              textAlign="center"
               fontWeight="bold"
               fontFamily="secondaryFont"
-              fontSize={{ md: "xl", lg: "xl" }}
+              fontSize={{ base: "md", md: "xl", lg: "xl" }} // Responsive font size
               pt={1}
-              color = "#880708"
+              color="#880708"
               _hover={{ color: "black" }}
             >
               HIGHLIGHTS
             </Text>
           </Link>
+          
           <Link to="/about-us">
             <Text
+              textAlign="center"
               fontWeight="bold"
               fontFamily="secondaryFont"
-              fontSize={{ md: "xl", lg: "xl" }}
+              fontSize={{ base: "md", md: "xl", lg: "xl" }} // Responsive font size
               pt={1}
-              color = "#880708"
+              color="#880708"
               _hover={{ color: "black" }}
             >
               ABOUT
             </Text>
           </Link>
+          
           <Link
             to="https://calendar.google.com/calendar/embed?src=c_edd4cfdf0fb049dddb72d0758cf511555bef3d2fd453982db4240a272e5292b9%40group.calendar.google.com&ctz=America%2FNew_York"
             target="_blank"
           >
             <Text
-             fontWeight="bold"
+              textAlign="center"
+              fontWeight="bold"
               fontFamily="secondaryFont"
-              fontSize={{ md: "xl", lg: "xl" }}
+              fontSize={{ base: "md", md: "xl", lg: "xl" }} // Responsive font size
               pt={1}
-              color = "#880708"
+              color="#880708"
               _hover={{ color: "black" }}
             >
               CALENDAR

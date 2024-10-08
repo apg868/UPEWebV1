@@ -18,7 +18,7 @@ function MainPage() {
                 <Banner bannerImage={bannerImage} logo={true} />
                 
                 <Text 
-                    mt={{ base: "-30px", md: "-45px", lg: "-60px" }}
+                    mt={{ base: "-30px", md: "-45px", lg: "-120px" }}
                     fontSize={{ base: "6xl", md: "6xl", lg: "7xl" }}
                     fontWeight="bold" 
                     color="#ece7dc"
@@ -43,19 +43,22 @@ function MainPage() {
                     >
                     Your Gateway to CS Excellence
                 </Text>
+            </Box>      
+            
             </Box>
-       
+
+            
             <Box
-             marginTop={{ base: "-100px", md: "205px", lg: "100px" }} 
-             marginBottom={{ base: "-10rem", md: "-20rem", lg: "-20rem" }}
+             marginTop={{ base: "-140px", md: "430px", lg: "100px" }} 
+             marginBottom={{ base: "-5rem", md: "-24rem", lg: "-18rem" }}
             > 
                 <Cards
                 cardH={{ base: "20em", md: "25em", lg: "30em" }}
-
                 />
-            </Box>        
-            <CTA />
-            </Box>
+            </Box>  
+
+            
+            <CTA             />
 
         </>
     );

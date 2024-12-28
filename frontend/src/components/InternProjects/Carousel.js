@@ -48,15 +48,16 @@ function Slide({ slide, handlePrev, handleNext, handleFlip, isFlipped }) {
       {!isFlipped && (
         <>
           <VStack
-            spacing={3}
-            position="absolute"
-            bottom="10%"
-            left="5%"
-            bg="rgba(0,0,0,0.8)"
-            p={{ base: "0.5", md: "1", lg: "2" }}
-            w={{ base: "10rem", md: "10rem", lg: "20em" }}
-            borderRadius="md"
-            alignItems="left"
+           spacing={0.5}
+           position="absolute"
+           bottom={{"base":"2%","md":"4%", "lg":"6%"}}
+           left={{"base":"2%","md":"3%","lg":"4%"}}
+           bg="rgba(0,0,0,0.9)"
+           p={{"base":"0.5","md":"1","lg":"2"}}
+           w={{"base":"4rem","md":"5rem","large":"10rem"}}
+           border="2px solid"
+           borderColor="white"
+           alignItems="left"
           >
             <Text
               fontSize={{ base: "sm", md: "md", lg: "lg" }}
@@ -68,7 +69,7 @@ function Slide({ slide, handlePrev, handleNext, handleFlip, isFlipped }) {
             </Text>
             <Text
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              fontFamily="bannerFont"
+              fontFamily="secondaryFont"
               color="white"
             >
               {slide.description}

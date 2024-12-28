@@ -17,13 +17,22 @@ import logoRED from "./../../assets_folder/logoRED.png";
 function HamNav() {
   return (
     <Flex
-      align="center"
+      align="right"
       justifyContent="space-between"
+      // w="100%"
+      // p={3}
+      // bg="#ece7dc"
+      // borderBottom="2px"
+      // borderBottomColor="primaryRed"
+      position="sticky"
+      top={0}
+      left={0}
+      right={0}
+      bg={{ md: "#ece7dc" }}
       w="100%"
-      p={3}
-      bg="primaryGray"
-      borderBottom="2px"
-      borderBottomColor="primaryRed"
+      h="8vh"
+      zIndex={1}
+      justify="flex-start"
     >
       <Link to="/">
         <Image src={logoRED} boxSize="5em" borderRadius="4em" />
